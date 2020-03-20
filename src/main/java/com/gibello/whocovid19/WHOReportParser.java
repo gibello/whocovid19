@@ -108,16 +108,22 @@ public class WHOReportParser {
 			String line = scanner.next().trim();
 			if(isData) {
 				line = line.replaceAll("\\s+(\\d+)", sep + "$1").replaceFirst("(\\d) ", "$1" + sep);
+				
 				// Specific issue with "Grand total" and "Diamond princess" lines (as "Diamond princess" title is sometimes multi-line)
 				// Patch that !
 				if(line.startsWith("International")) {
-					int pos = line.indexOf(",");
+					int pos = line.indexOf(sep);
 					if(pos <= 0) isData = false;
 					else line = "International conveyance (Diamond Princess)" + line.substring(pos);
 				}
 				if(line.contains("Grand total")) {
 					int pos = line.lastIndexOf("n/a");
 					line = line.substring(line.indexOf("Grand total"), pos+3);
+					// Grand total gross value may contain a space (already replaced by a "sep")
+					String gtdata = line.substring(12);
+					if((pos = gtdata.indexOf(sep)) < 4) {
+						line = "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
+					}
 				}
 				if(isData) data.append(line.trim() + "\n");
 			}
