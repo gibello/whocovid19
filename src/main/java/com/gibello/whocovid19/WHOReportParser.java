@@ -2,6 +2,7 @@ package com.gibello.whocovid19;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -22,7 +23,8 @@ public class WHOReportParser {
 		
 		StringBuilder chn = new StringBuilder();
 		String raw = preProcess(stripper.getText(document), sep, chn);
-
+		document.close();
+		
 		boolean inData = false;
 		StringBuilder data = new StringBuilder();
 		Scanner scanner = new Scanner(raw);
@@ -103,19 +105,70 @@ public class WHOReportParser {
 		scanner.useDelimiter("[\r\n]");
 		while (scanner.hasNext()) {
 			boolean isData = ! scanner.hasNext("\\d+.*");
-			String line = scanner.next();
+			String line = scanner.next().trim();
 			if(isData) {
 				line = line.replaceAll("\\s+(\\d+)", sep + "$1").replaceFirst("(\\d) ", "$1" + sep);
-				data.append(line.trim() + "\n");
+				// Specific issue with "Grand total" and "Diamond princess" lines (as "Diamond princess" title is sometimes multi-line)
+				// Patch that !
+				if(line.startsWith("International")) {
+					int pos = line.indexOf(",");
+					if(pos <= 0) isData = false;
+					else line = "International conveyance (Diamond Princess)" + line.substring(pos);
+				}
+				if(line.contains("Grand total")) {
+					int pos = line.lastIndexOf("n/a");
+					line = line.substring(line.indexOf("Grand total"), pos+3);
+				}
+				if(isData) data.append(line.trim() + "\n");
 			}
 		}
 		scanner.close();
 		return data.toString();
 	}
 
+	public static void parseDirectory(File srcDir, File destDir) throws IOException {
+		if(! destDir.exists()) destDir.mkdirs();
+		if(! destDir.isDirectory()) throw new IOException(destDir + " should be a directory");
+		File files[] = srcDir.listFiles();
+		for (int i=0; i<files.length; i++) {
+			String fname = files[i].getName();
+			if(fname.endsWith(".pdf")) {
+				System.err.print("Parsing " + fname + " ... ");
+				String baseName = fname.substring(0, fname.lastIndexOf('.'));
+				File csv = new File(destDir, baseName + ".csv");
+				PrintWriter out = null;
+				try {
+					out = new PrintWriter(csv);
+					out.print(WHOReportParser.extractFromPDF(files[i], ','));
+				} catch(IOException ioe) {
+				} finally {
+					out.close();
+				}
+				System.err.println("Done !");
+			}
+		}
+	}
+
     public static void main(String[] args) throws Exception {
-    	String pdfReport = "/tmp/report.pdf";
-    	if(args.length > 0) pdfReport = args[0];
-        System.out.println(WHOReportParser.extractFromPDF(new File(pdfReport), ','));
+    	String defaultReport = System.getProperty("java.io.tmpdir");
+    	if(! defaultReport.endsWith(File.separator)) defaultReport += File.separator;
+    	defaultReport += "report.pdf";
+  
+    	String pdfReport = defaultReport;
+    	if(args.length > 0) {
+    		pdfReport = args[0];
+    		File src = new File(pdfReport);
+    		if(src.isDirectory()) {
+    			if(args.length < 2) throw new IOException("Usage: WHOReportParser <sourceDir> <targetDir>");
+    			File destDir = new File(args[1]);
+    			WHOReportParser.parseDirectory(src, destDir);
+    		} else {
+    			System.out.println(WHOReportParser.extractFromPDF(new File(pdfReport), ','));
+    		}
+    	} else {
+    		System.err.println("No source file specified, trying " + defaultReport);
+    		System.out.println(WHOReportParser.extractFromPDF(new File(defaultReport), ','));
+    	}
+        
     }
 }
