@@ -9,12 +9,12 @@ Should not work for reports published before March 2, 2020.
 
 ## Quick start
 
-Build:
+### Build:
 ```
 mvn clean install
 ```
 
-Execute:
+### Execute:
 
 ```
 java -jar target/whocovid19-0.0.1-SNAPSHOT.jar <options>
@@ -23,9 +23,21 @@ java -jar target/whocovid19-0.0.1-SNAPSHOT.jar <options>
 Options can be:
 * No option: parses /tmp/report.pdf and outputs to console.
 * PDF report file name: parses report and outputs to console.
-* <sourceDirectory> <targetDirectory>: parses all PDF files present in source dir, then outputs CSV in target dir (created if needed). File names are rpeserved (except extension, ".csv" instead of ".pdf").
+* sourceDirectory targetDirectory: parses all PDF files present in source dir, then outputs CSV in target dir (created if needed). File names are rpeserved (except extension, ".csv" instead of ".pdf").
 
-Output:
+### Examples:
+
+Parse WHO march 19 PDF report:
+```
+java -jar target/whocovid19-0.0.1-SNAPSHOT.jar 20200319-sitrep-59-covid-19.pdf
+```
+
+Parse all reports in ~/who-reports directory, and place results in /tmp/results:
+```
+java -jar target/whocovid19-0.0.1-SNAPSHOT.jar ~/who-reports /tmp/results
+```
+
+### Output:
 
 CSV data should be generated, looking like this (generated from march 4, 2020 report):
 
