@@ -1,6 +1,7 @@
-# WHO covid19 PDF reports data + parser
+# WHO covid19 CSV reports data + PDF parser
 
 Parse WHO covid19 PDF reports, and provide data by country in CSV format.
+This repository provides the extracted CSV data (starting from march 2, 2020) + the parser source code.
 
 WHO reports available here:
 https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
