@@ -36,8 +36,7 @@ Slovenia,6,5,0,0,Local transmission,0
 Russian Federation,4,1,0,0,Imported cases only,0
 Azerbaijan,3,0,0,0,Imported cases only,5
 Estonia,3,1,0,0,Imported cases only,0
-Bosnia and Herzegovina,2,0,0,0
-Local transmission,1
+Bosnia and Herzegovina,2,0,0,0,Local transmission,1
 Hungary,2,0,0,0,Imported cases only,1
 Andorra,1,0,0,0,Imported cases only,3
 Armenia,1,0,0,0,Imported cases only,4
@@ -57,13 +56,11 @@ Indonesia,2,0,0,0,Local transmission,4
 Bhutan,1,1,0,0,Imported cases only,0
 Nepal,1,0,0,0,Imported cases only,42
 Sri Lanka,1,0,0,0,Imported cases only,39
-Iran (Islamic Republic of),3513,591,107,15
-Local transmission,0
+Iran (Islamic Republic of),3513,591,107,15,Local transmission,0
 Kuwait,58,0,0,0,Imported cases only,1
 Bahrain,49,0,0,0,Imported cases only,3
 Iraq,36,0,2,0,Imported cases only,1
-United Arab Emirates,27,0,0,0
-Local transmission,2
+United Arab Emirates,27,0,0,0,Local transmission,2
 Lebanon,16,3,0,0,Local transmission,0
 Oman,16,1,0,0,Imported cases only,0
 Qatar,8,0,0,0,Imported cases only,2
@@ -75,8 +72,7 @@ Afghanistan,1,0,0,0,Imported cases only,11
 Jordan,1,0,0,0,Imported cases only,3
 Tunisia,1,0,0,0,Imported cases only,3
 Occupied Palestinian Territory,7,0,0,0,Imported cases only,1
-United States of America,148,19,10,1
-Local transmission,0
+United States of America,148,19,10,1,Local transmission,0
 Canada,45,15,0,0,Local transmission,0
 Ecuador,13,6,0,0,Local transmission,0
 Brazil,7,4,0,0,Imported cases only,0
