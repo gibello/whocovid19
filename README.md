@@ -1,11 +1,13 @@
-# WHO covid19 PDF reports parser
+# WHO covid19 PDF reports data + parser
 
-Parse WHO covid19 PDF reports, and retrieve data by country in CSV format.
+Parse WHO covid19 PDF reports, and provide data by country in CSV format.
 
 WHO reports available here:
 https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
 
-Should not work for reports published before March 2, 2020.
+Latest parsed data (CSV) are here: [data/csv](data/csv) .
+
+Parser should not work for reports published before March 2, 2020.
 
 ## Quick start
 
