@@ -24,6 +24,8 @@ Among data sources available, I would recommend these ones:
 
 ## Parser quick start
 
+Read this only if you need to parse the WHO data yourself: for example, if you don't trust my data, or if I fail to provide data in the coming days :)
+
 ### Build:
 ```
 mvn clean install
