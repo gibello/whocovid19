@@ -16,7 +16,7 @@ Data can help people discover new things. They can be related to epidemiology (r
 
 The more exploitable data sources are available, the more public, private or individual researchers, statisticians, data scientists or even journalists can easily get material to work.
 
-Open data is certainly a key driver of future social progress, freedom, and democracy.
+Open data is certainly a key driver of future social progress, knowledge, freedom, and democracy.
 
 ## Are there other data sources ?
 
