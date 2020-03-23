@@ -1,16 +1,22 @@
 # WHO covid19 CSV reports data + PDF parser
 
 Parse WHO covid19 PDF reports, and provide data by country in CSV format.
-This repository provides the extracted CSV data (starting from march 2, 2020) + the parser source code.
+This repository provides the extracted CSV data (starting from march 1, 2020) + the parser source code.
 
 WHO reports available here:
 https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
 
-Latest parsed data (CSV) are here: [data/csv](data/csv) .
+**Latest parsed data (CSV) are here: [data/csv](data/csv)** . Note that files are named against their date of publication + report #, and the date corresponds to data collected the day before (eg. 20200322-sitrep-62-covid-19.csv contains data as of march 21, and is report #62).
 
-Parser should not work for reports published before March 2, 2020.
+Parser should not work for reports published before March 2, 2020 (data as of march 1st).
 
-## Quick start
+## Are there other data sources ?
+
+Among data sources available, I would recommend these ones:
+- Johns Hopkins University (USA): https://github.com/CSSEGISandData/COVID-19 (CSV format, with daily data and time series).
+- ECDC (European Center for Disease Control): https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide (Excel format + import script for R language).
+
+## Parser quick start
 
 ### Build:
 ```
