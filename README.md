@@ -3,17 +3,19 @@
 Parse WHO covid19 PDF reports, and provide data by country in CSV format.
 This repository provides the extracted CSV data (starting from march 1, 2020) + the parser source code.
 
+**Latest parsed data (CSV) are here: [data/csv](data/csv)** . Note that files are named against their date of publication + report #, and the date corresponds to data collected the day before (eg. 20200322-sitrep-62-covid-19.csv contains data as of march 21, and is report #62). Same name as WHO reports, except extension .csv .
+
 WHO reports available here:
 https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
-
-**Latest parsed data (CSV) are here: [data/csv](data/csv)** . Note that files are named against their date of publication + report #, and the date corresponds to data collected the day before (eg. 20200322-sitrep-62-covid-19.csv contains data as of march 21, and is report #62).
 
 Parser should not work for reports published before March 2, 2020 (data as of march 1st).
 
 ## Why are data important ?
 
 Data can help people discover new things. They can be related to epidemiology (refine knowledge about how the virus spreads, when, where, for how long...), but may also help new ideas to emerge (correlate virus spread with external factors, like pollution, sociological facts, economy... by using other available data sources).
+
 The more exploitable data sources are available, the more public, private or individual researchers, statisticians, data scientists or even journalists can easily get material to work.
+
 Open data is certainly a key driver of future social progress, freedom, and democracy.
 
 ## Are there other data sources ?
