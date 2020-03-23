@@ -10,6 +10,12 @@ https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-report
 
 Parser should not work for reports published before March 2, 2020 (data as of march 1st).
 
+## Why are data important ?
+
+Data can help people discover new things. They can be related to epidemiology (refine knowledge about how the virus spreads, when, where, for how long...), but may also help new ideas to emerge (correlate virus spread with external factors, like pollution, sociological facts, economy... by using other available data sources).
+The more exploitable data sources are available, the more public, private or individual researchers, statisticians, data scientists or even journalists can easily get material to work.
+Open data is certainly a key driver of future social progress, freedom, and democracy.
+
 ## Are there other data sources ?
 
 Among data sources available, I would recommend these ones:
