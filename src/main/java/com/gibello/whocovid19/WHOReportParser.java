@@ -62,7 +62,7 @@ public class WHOReportParser {
 		StringBuilder raw = new StringBuilder(rawData);
 		for(int i=0; i<raw.length(); i++) {
 			char c = raw.charAt(i);
-			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')')) raw.setCharAt(i, ' ');
+			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')' || c == '[' || c == ']')) raw.setCharAt(i, ' ');
 		}
 		if(! rawData.contains("Hubei")) return raw.toString(); // China among other countries
 		else { // China report by province (before march 16, 2020)
@@ -107,8 +107,10 @@ public class WHOReportParser {
 			boolean isData = ! scanner.hasNext("\\d+.*");
 			String line = scanner.next().trim();
 			if(isData) {
-				line = line.replaceAll("\\s+(\\d+)", sep + "$1").replaceFirst("(\\d) ", "$1" + sep);
-				
+				// 1st replace removes footnote refs like in "Kosovo[1]"
+				// next replace statements put commas btw figures
+				line = line.replaceFirst("\\[\\d+\\]", "").replaceAll("\\s+(\\d+)", sep + "$1").replaceFirst("(\\d) ", "$1" + sep);
+
 				// Specific issue with "Grand total" and "Diamond princess" lines (as "Diamond princess" title is sometimes multi-line)
 				// Patch that !
 				if(line.startsWith("International")) {
