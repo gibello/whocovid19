@@ -23,6 +23,7 @@ Open data is certainly a key driver of future social progress, knowledge, freedo
 Among data sources available, I would recommend these ones:
 - Johns Hopkins University (USA): https://github.com/CSSEGISandData/COVID-19 (CSV format, with daily data and time series).
 - ECDC (European Center for Disease Control): https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide (Excel format + import script for R language).
+- https://github.com/covid19-data/covid19-data provides aggregates from multiple datasets, including ECDC and WHO (CSV + JSON formats).
 
 ## Parser quick start
 
