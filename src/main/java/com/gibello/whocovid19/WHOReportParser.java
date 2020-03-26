@@ -62,7 +62,8 @@ public class WHOReportParser {
 		StringBuilder raw = new StringBuilder(rawData);
 		for(int i=0; i<raw.length(); i++) {
 			char c = raw.charAt(i);
-			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')' || c == '[' || c == ']')) raw.setCharAt(i, ' ');
+			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')' || c == '\''
+					|| c == '[' || c == ']')) raw.setCharAt(i, ' ');
 		}
 		if(! rawData.contains("Hubei")) return raw.toString(); // China among other countries
 		else { // China report by province (before march 16, 2020)
