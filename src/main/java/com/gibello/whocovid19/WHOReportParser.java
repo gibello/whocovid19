@@ -19,8 +19,8 @@ public class WHOReportParser {
 		PDDocument document = PDDocument.load(pdfReport);
 		PDFTextStripper stripper = new PDFTextStripper();
 		stripper.setStartPage(2);
-		stripper.setEndPage(7);
-		
+		stripper.setEndPage(8);
+
 		StringBuilder chn = new StringBuilder();
 		String raw = preProcess(stripper.getText(document), sep, chn);
 		document.close();
