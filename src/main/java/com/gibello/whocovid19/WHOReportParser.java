@@ -15,6 +15,9 @@ import org.apache.pdfbox.text.PDFTextStripper;
  */
 public class WHOReportParser {
 
+	static final short INDATA_THRESHOLD = 3;
+	static short dataScore = 0;
+
 	public static String extractFromPDF(File pdfReport, char sep) throws IOException {
 		PDDocument document = PDDocument.load(pdfReport);
 		PDFTextStripper stripper = new PDFTextStripper();
@@ -25,23 +28,27 @@ public class WHOReportParser {
 		String raw = preProcess(stripper.getText(document), sep, chn);
 		document.close();
 		
-		boolean inData = false;
 		StringBuilder data = new StringBuilder();
 		Scanner scanner = new Scanner(raw);
 		scanner.useDelimiter("[\r\n]");
 		while (scanner.hasNext()) {
+			// Warning for datascore calculation: old reports have been pre-processed (all China province data removed).
+			if(scanner.hasNext(".*Days since.*")) dataScore++;
+			if(scanner.hasNext(".*Data as of.*")) dataScore++;
 		    if (scanner.hasNext(".*egion.*")) {
 		    	String line = scanner.next();
-		    	if(! inData) {
-		    		if(line.length() < 40) inData = true;
+		    	if(! inData()) {
+		    		if(line.length() < 40) {
+		    			if(dataScore >= INDATA_THRESHOLD-1) dataScore++;
+		    		}
 		    	}
 		    } else if(scanner.hasNext("Grand total.*")) {
 		    	data.append(scanner.next().trim() + sep + "n/a" + sep + "n/a");
-		        inData = false;
+		        dataScore = 0; // Out of data
 		    } else {
 		    	String line = scanner.next().trim();
 		    	boolean endOfLine = line.matches(".*\\d+$");
-		    	if(inData && !line.startsWith("Territories") && !line.startsWith("Subtotal")) {
+		    	if(inData() && !line.startsWith("Territories") && !line.startsWith("Subtotal")) {
 		    		data.append(line + (endOfLine ? "\n" : " "));
 		    	}
 		    }
@@ -51,6 +58,12 @@ public class WHOReportParser {
 		
 		return postProcess(data.toString(), sep);
 	}
+	
+	/**
+	 * Likely to be inside relevant data ?
+	 * @return true if data score high enough, false otherwise
+	 */
+	private static boolean inData() { return WHOReportParser.dataScore >= WHOReportParser.INDATA_THRESHOLD; }
 	
 	/**
 	 * Reports between march 2 and march 15 2020 expose China by province...
