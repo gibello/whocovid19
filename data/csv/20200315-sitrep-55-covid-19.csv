@@ -89,9 +89,9 @@ Tunisia,16,0,0,0,Local transmission,1
 Afghanistan,10,3,0,0,Imported cases only,0
 Jordan,1,0,0,0,Imported cases only,12
 Sudan,1,0,0,0,Imported cases only,1
-occupied Palestinian territory,38,3,0,0,Local transmission,1
-United States of,1678,0,41,0,Local transmission,1
-America Canada,244,68,1,0,Local transmission,0
+Occupied Palestinian Territory,38,3,0,0,Local transmission,1
+United States of America,1678,0,41,0,Local transmission,1
+Canada,244,68,1,0,Local transmission,0
 Brazil,121,23,0,0,Local transmission,0
 Chile,61,18,0,0,Local transmission,0
 Argentina,45,11,2,0,Local transmission,0
@@ -125,7 +125,7 @@ Algeria,37,11,3,1,Local transmission,0
 Senegal,21,11,0,0,Local transmission,0
 Burkina Faso,3,1,0,0,Imported cases only,0
 Cameroon,3,1,0,0,Local transmission,0
-Cote d Ivoire,3,2,0,0,Imported cases only,0
+Cote d'Ivoire,3,2,0,0,Imported cases only,0
 Democratic Republic of the Congo,2,0,0,0,Imported cases only,1
 Ghana,2,1,0,0,Imported cases only,0
 Namibia,2,2,0,0,Imported cases only,0
@@ -140,7 +140,7 @@ Guinea,1,0,0,0,Imported cases only,1
 Kenya,1,0,0,0,Imported cases only,1
 Mauritania,1,1,0,0,Imported cases only,0
 Togo,1,0,0,0,Imported cases only,8
-Réunion,6,1,0,0,Imported cases only,0
+Reunion,6,1,0,0,Imported cases only,0
 Mayotte,1,1,0,0,Imported cases only,0
 International conveyance (Diamond Princess),697,0,7,0,Local transmission,1
 Grand total,72469,10955,2531,333,n/a,n/a

@@ -12,7 +12,7 @@ Italy,3089,587,107,27,Local transmission,0
 France,282,73,4,0,Local transmission,0
 Germany,262,66,0,0,Local transmission,0
 Spain,198,47,1,1,Local transmission,0
-the United Kingdom,89,38,0,0,Local transmission,0
+The United Kingdom,89,38,0,0,Local transmission,0
 Switzerland,56,20,0,0,Local transmission,0
 Norway,56,23,0,0,Local transmission,0
 Netherlands,38,10,0,0,Local transmission,0
@@ -69,8 +69,8 @@ Saudi Arabia,2,1,0,0,Imported cases only,0
 Afghanistan,1,0,0,0,Imported cases only,9
 Jordan,1,0,0,0,Imported cases only,2
 Tunisia,1,0,0,0,Imported cases only,2
-occupied Palestinian territory,4,4,0,0,Imported cases only,0
-the United States,129,21,9,3,Local transmission,0
+Occupied Palestinian Territory,4,4,0,0,Imported cases only,0
+United States of America,129,21,9,3,Local transmission,0
 Canada,30,0,0,0,Local transmission,1
 Ecuador,7,0,0,0,Local transmission,1
 Mexico,5,0,0,0,Imported cases only,3
@@ -79,7 +79,7 @@ Argentina,1,0,0,0,Imported cases only,1
 Chile,1,0,0,0,Imported cases only,1
 Dominican Republic,1,0,0,0,Imported cases only,3
 Saint Martin,2,0,0,0,Under investigation,2
-Saint Barthélemy,1,0,0,0,Under investigation,2
+Saint Barthelemy,1,0,0,0,Under investigation,2
 Algeria,12,7,0,0,Local transmission,0
 Senegal,4,3,0,0,Imported cases only,0
 Nigeria,1,0,0,0,Imported cases only,6

@@ -12,7 +12,7 @@ Italy,2036,347,52,17,Local transmission,0
 France,191,91,3,1,Local transmission,0
 Germany,157,28,0,0,Local transmission,0
 Spain,114,69,0,0,Local transmission,0
-the United Kingdom,39,3,0,0,Local transmission,0
+The United Kingdom,39,3,0,0,Local transmission,0
 Switzerland,30,6,0,0,Local transmission,0
 Norway,25,6,0,0,Local transmission,0
 Austria,18,8,0,0,Imported cases only,0
@@ -62,7 +62,7 @@ Jordan,1,1,0,0,Imported cases only,0
 Morocco,1,1,0,0,Imported cases only,0
 Saudi Arabia,1,1,0,0,Imported cases only,0
 Tunisia,1,1,0,0,Imported cases only,0
-the United States,64,2,2,2,Local transmission,0
+United States of America,64,2,2,2,Local transmission,0
 Canada,27,8,0,0,Local transmission,0
 Ecuador,6,5,0,0,Local transmission,0
 Mexico,5,0,0,0,Imported cases only,1
