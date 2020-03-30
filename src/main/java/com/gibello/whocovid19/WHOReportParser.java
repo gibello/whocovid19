@@ -3,6 +3,7 @@ package com.gibello.whocovid19;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.Scanner;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -77,6 +78,8 @@ public class WHOReportParser {
 			char c = raw.charAt(i);
 			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')' || c == '\''
 					|| c == '[' || c == ']')) raw.setCharAt(i, ' ');
+			if(c == 'é') raw.setCharAt(i, 'e');
+			if(c == 'ô') raw.setCharAt(i, 'o');
 		}
 		if(! rawData.contains("Hubei")) return raw.toString(); // China among other countries
 		else { // China report by province (before march 16, 2020)
@@ -110,7 +113,7 @@ public class WHOReportParser {
 	/**
 	 * Post-process and cleanup data.
 	 * @param rawData
-	 * @param sep
+	 * @param sep The separator to use in CSV
 	 * @return
 	 */
 	private static String postProcess(String rawData, char sep) {
@@ -141,13 +144,47 @@ public class WHOReportParser {
 						line = "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
 					}
 				}
-				if(isData) data.append(line.trim() + "\n");
+				if(isData) {
+					// Fix country name if required
+					int pos = line.indexOf(sep);
+					String country = line.substring(0, pos);
+					String fix = fixCountryName(country);
+					if(!country.equals(fix)) {
+						line = fix + line.substring(pos);
+					}
+					data.append(line.trim() + "\n");
+				}
 			}
 		}
 		scanner.close();
 		return data.toString();
 	}
+	
+	/**
+	 * Country names are a bit fuzzy in WHO reports...
+	 * Try to fix them when possible
+	 * @param name The country name as of WHO report
+	 * @return The fixed country name
+	 */
+	private static String fixCountryName(String name) {
+		HashMap<String, String> names = new HashMap<String, String>();
+		names.put("occupied Palestinian territory", "Occupied Palestinian Territory");
+		names.put("Occupied Palestinian territory", "Occupied Palestinian Territory");
+		names.put("occupied Palestinian Territory", "Occupied Palestinian Territory");
+		names.put("the United Kingdom", "The United Kingdom");
+		names.put("the United States", "United States of America");
+		names.put("Cote d Ivoire", "Cote d'Ivoire"); // The quote in who report is not a real quote for this country...
+		names.put("Curacao", "Curaçao");
+		String ret = names.get(name);
+		return (ret == null ? name : ret);
+	}
 
+	/**
+	 * Parse multiple reports in a directory
+	 * @param srcDir Source directory, with PDF reports
+	 * @param destDir Destination directory, for CSV data files
+	 * @throws IOException
+	 */
 	public static void parseDirectory(File srcDir, File destDir) throws IOException {
 		if(! destDir.exists()) destDir.mkdirs();
 		if(! destDir.isDirectory()) throw new IOException(destDir + " should be a directory");
