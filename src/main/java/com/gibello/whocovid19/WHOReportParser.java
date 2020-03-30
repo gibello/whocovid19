@@ -117,7 +117,7 @@ public class WHOReportParser {
 	 * @return
 	 */
 	private static String postProcess(String rawData, char sep) {
-		StringBuilder data = new StringBuilder("Country" + sep + "Confirmed cases" + sep + "New cases" + sep + "Deaths" + sep + "New deaths" + sep + "Transmission type" + sep + "Days since last case\n");
+		StringBuilder data = new StringBuilder("Country" + sep + "ISO-3166 code" + sep + "Confirmed cases" + sep + "New cases" + sep + "Deaths" + sep + "New deaths" + sep + "Transmission type" + sep + "Days since last case\n");
 		Scanner scanner = new Scanner(rawData);
 		scanner.useDelimiter("[\r\n]");
 		while (scanner.hasNext()) {
@@ -149,9 +149,7 @@ public class WHOReportParser {
 					int pos = line.indexOf(sep);
 					String country = line.substring(0, pos);
 					String fix = fixCountryName(country);
-					if(!country.equals(fix)) {
-						line = fix + line.substring(pos);
-					}
+					line = fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
 					data.append(line.trim() + "\n");
 				}
 			}

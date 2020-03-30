@@ -26,7 +26,7 @@ public class WHOReportParserTest extends TestCase {
 			e.printStackTrace(System.err);
 			fail(e.getMessage());
 		}
-        assertTrue(data.contains("Mexico|53|0|0|0|Imported cases only|1"));
+        assertTrue(data.contains("Mexico|MX|53|0|0|0|Imported cases only|1"));
     }
 
 }
