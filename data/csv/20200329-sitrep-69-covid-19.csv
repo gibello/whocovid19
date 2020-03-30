@@ -108,7 +108,7 @@ Sudan,5,2,1,0,Under investigation,0
 Syrian Arab Republic,5,0,0,0,Imported cases only,3
 Libya,3,2,0,0,Imported cases only,0
 Somalia,3,0,0,0,Imported cases only,2
-occupied Palestinian territory,104,7,1,0,Local transmission,0
+Occupied Palestinian Territory,104,7,1,0,Local transmission,0
 United States of America,103321,18093,1668,425,Local transmission,0
 Canada,4757,739,55,16,Local transmission,0
 Brazil,3417,502,92,15,Local transmission,0
@@ -155,7 +155,7 @@ Saint Martin,12,0,0,0,Under investigation,1
 Cayman Islands,8,0,1,0,Imported cases only,3
 Curaçao,7,0,1,0,Imported cases only,2
 Montserrat,5,0,0,0,Imported cases only,1
-Saint Barthélemy,5,0,0,0,Under investigation,1
+Saint Barthelemy,5,0,0,0,Under investigation,1
 Sint Maarten,3,0,0,0,Imported cases only,1
 Anguilla,2,0,0,0,Local transmission,2
 British Virgin Islands,2,0,0,0,Imported cases only,2
@@ -163,7 +163,7 @@ Turks and Caicos Islands,2,0,0,0,Imported cases only,2
 South Africa,1187,17,1,0,Local transmission,0
 Algeria,409,42,26,1,Local transmission,0
 Burkina Faso,146,0,3,0,Local transmission,3
-Cote d Ivoire,140,48,0,0,Local transmission,0
+Cote d'Ivoire,140,48,0,0,Local transmission,0
 Ghana,137,0,4,0,Local transmission,1
 Senegal,119,0,0,0,Local transmission,1
 Mauritius,102,6,2,0,Local transmission,0
@@ -199,7 +199,7 @@ Gambia,3,1,1,0,Imported cases only,0
 Liberia,3,0,0,0,Local transmission,7
 Angola,2,0,0,0,Imported cases only,7
 Guinea Bissau,2,0,0,0,Imported cases only,3
-Réunion,143,8,0,0,Local transmission,0
+Reunion,143,8,0,0,Local transmission,0
 Mayotte,50,0,0,0,Local transmission,2
 International conveyance (Diamond Princess),712,0,7,0,Local transmission,13
 Grand total,634835,63159,29957,3464,n/a,n/a

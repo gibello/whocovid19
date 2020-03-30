@@ -105,7 +105,7 @@ Djibouti,3,2,0,0,Imported cases only,0
 Sudan,2,0,1,0,Imported cases only,2
 Somalia,1,0,0,0,Imported cases only,7
 Syrian Arab Republic,1,0,0,0,Imported cases only,1
-occupied Palestinian territory,59,0,0,0,Local transmission,1
+Occupied Palestinian Territory,59,0,0,0,Local transmission,1
 United States of America,42164,10591,471,69,Local transmission,0
 Brazil,1546,642,25,14,Local transmission,0
 Canada,1432,48,20,1,Local transmission,0
@@ -139,8 +139,8 @@ Antigua and Barbuda,1,0,0,0,Imported cases only,10
 Belize,1,1,0,0,Imported cases only,0
 Dominica,1,1,0,0,Imported cases only,0
 Grenada,1,0,0,0,Imported cases only,1
-Saint Vincent and the,1,0,0,0,Imported cases only,11
-Grenadines Guadeloupe,62,6,0,0,Imported cases only,0
+Saint Vincent and the Grenadines,1,0,0,0,Imported cases only,11
+Guadeloupe,62,6,0,0,Imported cases only,0
 Martinique,53,21,0,0,Imported cases only,0
 Puerto Rico,31,8,2,1,Imported cases only,0
 French Guiana,20,2,0,0,Local transmission,0
@@ -150,7 +150,7 @@ Saint Martin,8,3,0,0,Under investigation,0
 Bermuda,6,4,0,0,Imported cases only,0
 Cayman Islands,5,2,1,0,Imported cases only,0
 Curaçao,4,1,1,0,Imported cases only,0
-Saint Barthélemy,3,0,0,0,Under investigation,8
+Saint Barthelemy,3,0,0,0,Under investigation,8
 Sint Maarten,2,1,0,0,Imported cases only,0
 Montserrat,1,0,0,0,Imported cases only,6
 Turks and Caicos Islands,1,1,0,0,Imported cases only,0
@@ -163,7 +163,7 @@ Democratic Republic of the Congo,36,6,2,0,Local transmission,0
 Mauritius,36,24,0,0,Imported cases only,0
 Rwanda,36,19,0,0,Local transmission,0
 Ghana,27,3,2,2,Local transmission,0
-Côte d Ivoire,25,0,0,0,Imported cases only,1
+Cote d'Ivoire,25,0,0,0,Imported cases only,1
 Nigeria,22,0,0,0,Imported cases only,2
 Togo,18,2,0,0,Imported cases only,0
 Kenya,16,1,0,0,Local transmission,0
@@ -191,7 +191,7 @@ Zimbabwe,2,0,1,1,Imported cases only,2
 Eritrea,1,0,0,0,Imported cases only,2
 Gambia,1,0,0,0,Imported cases only,6
 Mozambique,1,0,0,0,Imported cases only,1
-Réunion,71,7,0,0,Under investigation,0
+Reunion,71,7,0,0,Under investigation,0
 Mayotte,24,10,0,0,Imported cases only,0
 International conveyance (Diamond Princess),712,0,7,0,Local transmission,8
 Grand total,372757,39827,16231,1722,n/a,n/a
