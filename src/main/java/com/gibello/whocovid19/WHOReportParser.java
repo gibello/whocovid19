@@ -3,7 +3,15 @@ package com.gibello.whocovid19;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Scanner;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -56,10 +64,22 @@ public class WHOReportParser {
 		}
 		scanner.close();
 		data.append("\n" + chn); // China data if any (from reports prior to march 15, 2020)
-		
-		return postProcess(data.toString(), sep);
+
+		return postProcess(data.toString(), sep, extractDate(pdfReport.getName()));
 	}
-	
+
+	protected static String extractDate(String reportName) {
+		String date = reportName.substring(0, 8);
+		LocalDate currentDate;
+		try {
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+			currentDate = LocalDate.parse(date, formatter);
+		} catch(DateTimeParseException e) {
+			currentDate = LocalDate.now();
+		}
+		return currentDate.minusDays(1).toString();
+	}
+
 	/**
 	 * Likely to be inside relevant data ?
 	 * @return true if data score high enough, false otherwise
@@ -116,8 +136,9 @@ public class WHOReportParser {
 	 * @param sep The separator to use in CSV
 	 * @return
 	 */
-	private static String postProcess(String rawData, char sep) {
-		StringBuilder data = new StringBuilder("Country" + sep + "ISO-3166 code" + sep + "Confirmed cases" + sep + "New cases" + sep + "Deaths" + sep + "New deaths" + sep + "Transmission type" + sep + "Days since last case\n");
+	private static String postProcess(String rawData, char sep, String date) {
+		
+		StringBuilder data = new StringBuilder("Date" + sep + "Country" + sep + "ISO-3166 code" + sep + "Confirmed cases" + sep + "New cases" + sep + "Deaths" + sep + "New deaths" + sep + "Transmission type" + sep + "Days since last case\n");
 		Scanner scanner = new Scanner(rawData);
 		scanner.useDelimiter("[\r\n]");
 		while (scanner.hasNext()) {
@@ -133,7 +154,7 @@ public class WHOReportParser {
 				if(line.startsWith("International")) {
 					int pos = line.indexOf(sep);
 					if(pos <= 0) isData = false;
-					else line = "International conveyance (Diamond Princess)" + line.substring(pos);
+					else line = date + sep + "International conveyance (Diamond Princess)" + line.substring(pos);
 				}
 				if(line.contains("Grand total")) {
 					int pos = line.lastIndexOf("n/a");
@@ -141,7 +162,7 @@ public class WHOReportParser {
 					// Grand total gross value may contain a space (already replaced by a "sep")
 					String gtdata = line.substring(12);
 					if((pos = gtdata.indexOf(sep)) < 4) {
-						line = "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
+						line = date + sep + "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
 					}
 				}
 				if(isData) {
@@ -149,7 +170,7 @@ public class WHOReportParser {
 					int pos = line.indexOf(sep);
 					String country = line.substring(0, pos);
 					String fix = fixCountryName(country);
-					line = fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
+					line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
 					data.append(line.trim() + "\n");
 				}
 			}

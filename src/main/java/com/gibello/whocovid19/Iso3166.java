@@ -3,12 +3,6 @@ package com.gibello.whocovid19;
 import java.util.List;
 import java.util.HashMap;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import com.neovisionaries.i18n.CountryCode;
 
 public class Iso3166 {
@@ -50,57 +44,4 @@ public class Iso3166 {
 		return "n/a";
 	}
 
-	/* THIS CODE WAS USED TO CONVERT OLD csv FILES (without country code)
-	 * KEPT for testing purposes if required
-	public static void main(String args[]) throws Exception {
-		parseDirectory(new File("/tmp/csv"), new File("/tmp/new-reports"));
-		System.exit(0);
-
-		File input = new File("/tmp/countries.txt");
-		BufferedReader in = new BufferedReader(new FileReader(input));
-		String country;
-		while((country = in.readLine()) != null) {
-			System.out.println(country + "=" + getCountryCode(country));
-		}
-		in.close();
-	}
-	
-	public static void parseDirectory(File srcDir, File destDir) throws IOException {
-		if(! destDir.exists()) destDir.mkdirs();
-		if(! destDir.isDirectory()) throw new IOException(destDir + " should be a directory");
-		File files[] = srcDir.listFiles();
-		for (int i=0; i<files.length; i++) {
-			String fname = files[i].getName();
-			if(fname.endsWith(".csv")) {
-				System.err.print("Parsing " + fname + " ... ");
-				File csv = new File(destDir, fname);
-				PrintWriter out = null;
-				BufferedReader in = new BufferedReader(new FileReader(files[i]));
-				try {
-					out = new PrintWriter(csv);
-					String line;
-					while((line = in.readLine()) != null) {
-						int pos = line.indexOf(',');
-						if(pos <= 0) continue;
-						String country = line.substring(0, pos);
-						String code;
-						if(country.startsWith("International") || country.startsWith("Grand total")) {
-							code = "n/a";
-						}
-						else if(country.contentEquals("Country")) {
-							code = "ISO-3166 code";
-						}
-						else {
-							code = getCountryCode(country);
-						}
-						out.println(country + "," + code + line.substring(pos));
-					}
-				} catch(IOException ioe) {
-				} finally {
-					out.close();
-				}
-				System.err.println("Done !");
-			}
-		}
-	} */
 }

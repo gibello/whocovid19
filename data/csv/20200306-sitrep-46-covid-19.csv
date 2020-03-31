@@ -1,92 +1,92 @@
-Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmission type,Days since last case
-Republic of Korea,KOR,6284,518,42,7,Local transmission,0
-Japan,JPN,349,32,6,0,Local transmission,0
-Singapore,SGP,117,7,0,0,Local transmission,0
-Australia,AUS,57,0,2,0,Local transmission,1
-Malaysia,MYS,55,5,0,0,Local transmission,0
-Viet Nam,VNM,16,0,0,0,Local transmission,22
-Philippines,PHL,5,2,1,0,Local transmission,0
-New Zealand,NZL,4,2,0,0,Local transmission,0
-Cambodia,KHM,1,0,0,0,Imported cases only,38
-Italy,ITA,3858,769,148,41,Local transmission,0
-Germany,DEU,534,272,0,0,Local transmission,0
-France,FRA,420,138,6,2,Local transmission,0
-Spain,ESP,257,59,3,2,Local transmission,0
-The United Kingdom,GBR,118,29,0,0,Local transmission,0
-Norway,NOR,86,30,0,0,Local transmission,0
-Switzerland,CHE,86,30,1,1,Local transmission,0
-Netherlands,NLD,82,44,0,0,Local transmission,0
-Sweden,SWE,61,26,0,0,Local transmission,0
-Belgium,BEL,50,27,0,0,Local transmission,1
-Austria,AUT,47,10,0,0,Imported cases only,0
-Greece,GRC,32,23,0,0,Local transmission,1
-Iceland,ISL,26,0,0,0,Imported cases only,1
-San Marino,SMR,21,5,0,0,Local transmission,0
-Denmark,DNK,18,8,0,0,Local transmission,1
-Israel,ISR,15,0,0,0,Local transmission,1
-Ireland,IRL,14,12,0,0,Local transmission,0
-Czechia,CZE,12,7,0,0,Local transmission,0
-Finland,FIN,12,5,0,0,Local transmission,0
-Croatia,HRV,10,1,0,0,Local transmission,0
-Georgia,GEO,9,6,0,0,Imported cases only,0
-Portugal,PRT,9,0,0,0,Local transmission,1
-Belarus,BLR,6,0,0,0,Local transmission,1
-Romania,ROU,6,2,0,0,Local transmission,0
-Slovenia,SVN,6,5,0,0,Local transmission,0
-Russian Federation,RUS,4,1,0,0,Imported cases only,0
-Azerbaijan,AZE,3,0,0,0,Imported cases only,5
-Estonia,EST,3,1,0,0,Imported cases only,0
-Bosnia and Herzegovina,BIH,2,0,0,0,Local transmission,1
-Hungary,HUN,2,0,0,0,Imported cases only,1
-Andorra,AND,1,0,0,0,Imported cases only,3
-Armenia,ARM,1,0,0,0,Imported cases only,4
-Latvia,LVA,1,0,0,0,Imported cases only,3
-Liechtenstein,LIE,1,0,0,0,Imported cases only,0
-Lithuania,LTU,1,0,0,0,Imported cases only,7
-Luxembourg,LUX,1,0,0,0,Imported cases only,4
-Monaco,MCO,1,0,0,0,Under investigation,5
-North Macedonia,MKD,1,0,0,0,Imported cases only,8
-Poland,POL,1,0,0,0,Imported cases only,2
-Serbia,SRB,1,1,0,0,Under investigation,0
-Ukraine,UKR,1,0,0,0,Imported cases only,2
-Gibraltar,GIB,1,0,0,0,Under investigation,2
-Thailand,THA,47,0,1,0,Local transmission,1
-India,IND,30,1,0,0,Local transmission,0
-Indonesia,IDN,2,0,0,0,Local transmission,4
-Bhutan,BTN,1,1,0,0,Imported cases only,0
-Nepal,NPL,1,0,0,0,Imported cases only,42
-Sri Lanka,LKA,1,0,0,0,Imported cases only,39
-Iran (Islamic Republic of),IRN,3513,591,107,15,Local transmission,0
-Kuwait,KWT,58,0,0,0,Imported cases only,1
-Bahrain,BHR,49,0,0,0,Imported cases only,3
-Iraq,IRQ,36,0,2,0,Imported cases only,1
-United Arab Emirates,ARE,27,0,0,0,Local transmission,2
-Lebanon,LBN,16,3,0,0,Local transmission,0
-Oman,OMN,16,1,0,0,Imported cases only,0
-Qatar,QAT,8,0,0,0,Imported cases only,2
-Saudi Arabia,SAU,8,6,0,0,Imported cases only,0
-Pakistan,PAK,5,0,0,0,Imported cases only,3
-Egypt,EGY,3,1,0,0,Imported cases only,0
-Morocco,MAR,2,0,0,0,Imported cases only,1
-Afghanistan,AFG,1,0,0,0,Imported cases only,11
-Jordan,JOR,1,0,0,0,Imported cases only,3
-Tunisia,TUN,1,0,0,0,Imported cases only,3
-Occupied Palestinian Territory,PSE,7,0,0,0,Imported cases only,1
-United States of America,USA,148,19,10,1,Local transmission,0
-Canada,CAN,45,15,0,0,Local transmission,0
-Ecuador,ECU,13,6,0,0,Local transmission,0
-Brazil,BRA,7,4,0,0,Imported cases only,0
-Mexico,MEX,5,0,0,0,Imported cases only,4
-Argentina,ARG,1,0,0,0,Imported cases only,2
-Chile,CHL,1,0,0,0,Imported cases only,2
-Dominican Republic,DOM,1,0,0,0,Imported cases only,4
-Saint Martin,MAF,2,0,0,0,Under investigation,3
-Saint Barthelemy,BLM,1,0,0,0,Under investigation,3
-Algeria,DZA,12,0,0,0,Local transmission,1
-Senegal,SEN,4,0,0,0,Imported cases only,1
-Cameroon,CMR,1,1,0,0,Imported cases only,0
-Nigeria,NGA,1,0,0,0,Imported cases only,7
-South Africa,ZAF,1,1,0,0,Imported cases only,0
-International conveyance (Diamond Princess),n/a,696,0,6,0,Local transmission,0
-China,CHN,80711,146,3045,30,Under investigation,0
-Grand total,n/a,98192,2873,3380,99,n/a,n/a
+Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmission type,Days since last case
+2020-03-05,Republic of Korea,KOR,6284,518,42,7,Local transmission,0
+2020-03-05,Japan,JPN,349,32,6,0,Local transmission,0
+2020-03-05,Singapore,SGP,117,7,0,0,Local transmission,0
+2020-03-05,Australia,AUS,57,0,2,0,Local transmission,1
+2020-03-05,Malaysia,MYS,55,5,0,0,Local transmission,0
+2020-03-05,Viet Nam,VNM,16,0,0,0,Local transmission,22
+2020-03-05,Philippines,PHL,5,2,1,0,Local transmission,0
+2020-03-05,New Zealand,NZL,4,2,0,0,Local transmission,0
+2020-03-05,Cambodia,KHM,1,0,0,0,Imported cases only,38
+2020-03-05,Italy,ITA,3858,769,148,41,Local transmission,0
+2020-03-05,Germany,DEU,534,272,0,0,Local transmission,0
+2020-03-05,France,FRA,420,138,6,2,Local transmission,0
+2020-03-05,Spain,ESP,257,59,3,2,Local transmission,0
+2020-03-05,The United Kingdom,GBR,118,29,0,0,Local transmission,0
+2020-03-05,Norway,NOR,86,30,0,0,Local transmission,0
+2020-03-05,Switzerland,CHE,86,30,1,1,Local transmission,0
+2020-03-05,Netherlands,NLD,82,44,0,0,Local transmission,0
+2020-03-05,Sweden,SWE,61,26,0,0,Local transmission,0
+2020-03-05,Belgium,BEL,50,27,0,0,Local transmission,1
+2020-03-05,Austria,AUT,47,10,0,0,Imported cases only,0
+2020-03-05,Greece,GRC,32,23,0,0,Local transmission,1
+2020-03-05,Iceland,ISL,26,0,0,0,Imported cases only,1
+2020-03-05,San Marino,SMR,21,5,0,0,Local transmission,0
+2020-03-05,Denmark,DNK,18,8,0,0,Local transmission,1
+2020-03-05,Israel,ISR,15,0,0,0,Local transmission,1
+2020-03-05,Ireland,IRL,14,12,0,0,Local transmission,0
+2020-03-05,Czechia,CZE,12,7,0,0,Local transmission,0
+2020-03-05,Finland,FIN,12,5,0,0,Local transmission,0
+2020-03-05,Croatia,HRV,10,1,0,0,Local transmission,0
+2020-03-05,Georgia,GEO,9,6,0,0,Imported cases only,0
+2020-03-05,Portugal,PRT,9,0,0,0,Local transmission,1
+2020-03-05,Belarus,BLR,6,0,0,0,Local transmission,1
+2020-03-05,Romania,ROU,6,2,0,0,Local transmission,0
+2020-03-05,Slovenia,SVN,6,5,0,0,Local transmission,0
+2020-03-05,Russian Federation,RUS,4,1,0,0,Imported cases only,0
+2020-03-05,Azerbaijan,AZE,3,0,0,0,Imported cases only,5
+2020-03-05,Estonia,EST,3,1,0,0,Imported cases only,0
+2020-03-05,Bosnia and Herzegovina,BIH,2,0,0,0,Local transmission,1
+2020-03-05,Hungary,HUN,2,0,0,0,Imported cases only,1
+2020-03-05,Andorra,AND,1,0,0,0,Imported cases only,3
+2020-03-05,Armenia,ARM,1,0,0,0,Imported cases only,4
+2020-03-05,Latvia,LVA,1,0,0,0,Imported cases only,3
+2020-03-05,Liechtenstein,LIE,1,0,0,0,Imported cases only,0
+2020-03-05,Lithuania,LTU,1,0,0,0,Imported cases only,7
+2020-03-05,Luxembourg,LUX,1,0,0,0,Imported cases only,4
+2020-03-05,Monaco,MCO,1,0,0,0,Under investigation,5
+2020-03-05,North Macedonia,MKD,1,0,0,0,Imported cases only,8
+2020-03-05,Poland,POL,1,0,0,0,Imported cases only,2
+2020-03-05,Serbia,SRB,1,1,0,0,Under investigation,0
+2020-03-05,Ukraine,UKR,1,0,0,0,Imported cases only,2
+2020-03-05,Gibraltar,GIB,1,0,0,0,Under investigation,2
+2020-03-05,Thailand,THA,47,0,1,0,Local transmission,1
+2020-03-05,India,IND,30,1,0,0,Local transmission,0
+2020-03-05,Indonesia,IDN,2,0,0,0,Local transmission,4
+2020-03-05,Bhutan,BTN,1,1,0,0,Imported cases only,0
+2020-03-05,Nepal,NPL,1,0,0,0,Imported cases only,42
+2020-03-05,Sri Lanka,LKA,1,0,0,0,Imported cases only,39
+2020-03-05,Iran (Islamic Republic of),IRN,3513,591,107,15,Local transmission,0
+2020-03-05,Kuwait,KWT,58,0,0,0,Imported cases only,1
+2020-03-05,Bahrain,BHR,49,0,0,0,Imported cases only,3
+2020-03-05,Iraq,IRQ,36,0,2,0,Imported cases only,1
+2020-03-05,United Arab Emirates,ARE,27,0,0,0,Local transmission,2
+2020-03-05,Lebanon,LBN,16,3,0,0,Local transmission,0
+2020-03-05,Oman,OMN,16,1,0,0,Imported cases only,0
+2020-03-05,Qatar,QAT,8,0,0,0,Imported cases only,2
+2020-03-05,Saudi Arabia,SAU,8,6,0,0,Imported cases only,0
+2020-03-05,Pakistan,PAK,5,0,0,0,Imported cases only,3
+2020-03-05,Egypt,EGY,3,1,0,0,Imported cases only,0
+2020-03-05,Morocco,MAR,2,0,0,0,Imported cases only,1
+2020-03-05,Afghanistan,AFG,1,0,0,0,Imported cases only,11
+2020-03-05,Jordan,JOR,1,0,0,0,Imported cases only,3
+2020-03-05,Tunisia,TUN,1,0,0,0,Imported cases only,3
+2020-03-05,Occupied Palestinian Territory,PSE,7,0,0,0,Imported cases only,1
+2020-03-05,United States of America,USA,148,19,10,1,Local transmission,0
+2020-03-05,Canada,CAN,45,15,0,0,Local transmission,0
+2020-03-05,Ecuador,ECU,13,6,0,0,Local transmission,0
+2020-03-05,Brazil,BRA,7,4,0,0,Imported cases only,0
+2020-03-05,Mexico,MEX,5,0,0,0,Imported cases only,4
+2020-03-05,Argentina,ARG,1,0,0,0,Imported cases only,2
+2020-03-05,Chile,CHL,1,0,0,0,Imported cases only,2
+2020-03-05,Dominican Republic,DOM,1,0,0,0,Imported cases only,4
+2020-03-05,Saint Martin,MAF,2,0,0,0,Under investigation,3
+2020-03-05,Saint Barthelemy,BLM,1,0,0,0,Under investigation,3
+2020-03-05,Algeria,DZA,12,0,0,0,Local transmission,1
+2020-03-05,Senegal,SEN,4,0,0,0,Imported cases only,1
+2020-03-05,Cameroon,CMR,1,1,0,0,Imported cases only,0
+2020-03-05,Nigeria,NGA,1,0,0,0,Imported cases only,7
+2020-03-05,South Africa,ZAF,1,1,0,0,Imported cases only,0
+2020-03-05,International conveyance (Diamond Princess),n/a,696,0,6,0,Local transmission,0
+2020-03-05,China,CHN,80711,146,3045,30,Under investigation,0
+2020-03-05,Grand total,n/a,98192,2873,3380,99,n/a,n/a
