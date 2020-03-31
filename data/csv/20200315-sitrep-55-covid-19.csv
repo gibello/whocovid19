@@ -1,147 +1,147 @@
 Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmission type,Days since last case
-Republic of Korea,KR,8162,76,75,3,Local transmission,0
-Japan,JP,780,64,22,1,Local transmission,0
-Australia,AU,249,52,3,0,Local transmission,0
-Malaysia,MY,238,41,0,0,Local transmission,0
-Singapore,SG,212,12,0,0,Local transmission,0
-Philippines,PH,111,47,6,4,Local transmission,0
-Viet Nam,VN,53,5,0,0,Local transmission,0
-Brunei Darussalam,BN,40,15,0,0,Local transmission,0
-Cambodia,KH,7,0,0,0,Local transmission,1
-New Zealand,NZ,6,0,0,0,Local transmission,1
-Mongolia,MN,1,0,0,0,Imported cases only,5
-French Polynesia,PF,3,2,0,0,Imported cases only,0
-Italy,IT,21157,3497,1441,173,Local transmission,0
-Spain,ES,5753,1522,136,16,Local transmission,0
-France,FR,4469,829,91,12,Local transmission,0
-Germany,DE,3795,733,8,2,Local transmission,0
-Switzerland,CH,1359,234,11,5,Local transmission,0
-The United Kingdom,GB,1144,342,21,11,Local transmission,0
-Netherlands,NL,959,155,12,2,Local transmission,0
-Sweden,SE,924,149,0,0,Local transmission,0
-Norway,NO,907,157,1,0,Local transmission,0
-Denmark,DK,827,26,0,0,Local transmission,0
-Austria,AT,800,296,1,0,Local transmission,0
-Belgium,BE,689,90,0,0,Local transmission,0
-Greece,GR,228,130,2,1,Local transmission,0
-Czechia,CZ,214,64,0,0,Local transmission,0
-Finland,FI,210,101,0,0,Local transmission,0
-Israel,IL,178,78,0,0,Local transmission,0
-Slovenia,SI,141,0,0,0,Local transmission,1
-Iceland,IS,138,77,0,0,Local transmission,0
-Ireland,IE,129,39,2,1,Local transmission,0
-Romania,RO,123,59,0,0,Local transmission,0
-Portugal,PT,112,0,0,0,Local transmission,1
-Poland,PL,111,47,3,2,Local transmission,0
-San Marino,SM,92,26,5,3,Local transmission,0
-Estonia,EE,79,0,0,0,Local transmission,1
-Slovakia,SK,44,14,0,0,Local transmission,0
-Bulgaria,BG,43,36,2,1,Local transmission,0
-Serbia,RS,41,10,0,0,Local transmission,0
-Albania,AL,38,5,1,0,Local transmission,0
-Luxembourg,LU,38,0,1,0,Local transmission,1
-Croatia,HR,37,10,0,0,Local transmission,0
-Russian Federation,RU,34,0,0,0,Imported cases only,2
-Hungary,HU,32,13,0,0,Local transmission,0
-Georgia,GE,30,5,0,0,Imported cases only,0
-Latvia,LV,30,14,0,0,Imported cases only,0
-Belarus,BY,21,0,0,0,Local transmission,1
-Cyprus,CY,21,7,0,0,Imported cases only,0
-Azerbaijan,AZ,19,8,0,0,Imported cases only,0
-Bosnia and Herzegovina,BA,18,7,0,0,Local transmission,0
-North Macedonia,MK,13,4,0,0,Local transmission,0
-Malta,MT,12,0,0,0,Imported cases only,2
-Republic of Moldova,MD,12,4,0,0,Imported cases only,0
-Lithuania,LT,9,3,0,0,Imported cases only,0
-Armenia,AM,8,0,0,0,Local transmission,1
-Kazakhstan,KZ,6,6,0,0,Imported cases only,0
-Turkey,TR,5,0,0,0,Imported cases only,1
-Liechtenstein,LI,4,0,0,0,Imported cases only,2
-Ukraine,UA,3,0,1,0,Local transmission,1
-Andorra,AD,2,0,0,0,Imported cases only,1
-Monaco,MC,2,0,0,0,Under investigation,1
-Holy See,VA,1,0,0,0,Under investigation,9
-Faroe Islands,FO,9,6,0,0,Imported cases only,0
-Gibraltar,GI,1,0,0,0,Under investigation,11
-Guernsey,GG,1,0,0,0,Imported cases only,5
-Jersey,JE,2,0,0,0,Imported cases only,2
-Indonesia,ID,117,48,4,1,Local transmission,0
-India,IN,107,25,2,0,Local transmission,0
-Thailand,TH,75,0,1,0,Local transmission,2
-Sri Lanka,LK,11,5,0,0,Local transmission,0
-Maldives,MV,10,1,0,0,Local transmission,0
-Bangladesh,BD,3,0,0,0,Local transmission,6
-Bhutan,BT,1,0,0,0,Imported cases only,9
-Nepal,NP,1,0,0,0,Imported cases only,51
-Iran (Islamic Republic of),IR,12729,1365,608,94,Local transmission,0
-Qatar,QA,337,75,0,0,Local transmission,0
-Bahrain,BH,211,1,0,0,Local transmission,0
-Kuwait,KW,112,12,0,0,Local transmission,0
-Saudi Arabia,SA,103,41,0,0,Local transmission,0
-Egypt,EG,93,0,2,0,Local transmission,1
-Iraq,IQ,93,0,9,0,Local transmission,1
-Lebanon,LB,93,16,3,0,Local transmission,0
-United Arab Emirates,AE,85,0,0,0,Local transmission,2
-Pakistan,PK,28,7,0,0,Imported cases only,0
-Oman,OM,20,1,0,0,Imported cases only,0
-Morocco,MA,18,11,1,0,Local transmission,0
-Tunisia,TN,16,0,0,0,Local transmission,1
-Afghanistan,AF,10,3,0,0,Imported cases only,0
-Jordan,JO,1,0,0,0,Imported cases only,12
-Sudan,SD,1,0,0,0,Imported cases only,1
-Occupied Palestinian Territory,PS,38,3,0,0,Local transmission,1
-United States of America,US,1678,0,41,0,Local transmission,1
-Canada,CA,244,68,1,0,Local transmission,0
-Brazil,BR,121,23,0,0,Local transmission,0
-Chile,CL,61,18,0,0,Local transmission,0
-Argentina,AR,45,11,2,0,Local transmission,0
-Peru,PE,43,15,0,0,Local transmission,0
-Mexico,MX,41,15,0,0,Imported cases only,0
-Panama,PA,27,0,1,0,Local transmission,1
-Colombia,CO,24,8,0,0,Local transmission,0
-Costa Rica,CR,23,0,0,0,Local transmission,1
-Ecuador,EC,23,0,0,0,Local transmission,1
-Jamaica,JM,8,1,0,0,Local transmission,0
-Guyana,GY,1,0,1,0,Imported cases only,2
-Paraguay,PY,6,0,0,0,Local transmission,1
-Dominican Republic,DO,5,0,0,0,Imported cases only,5
-Cuba,CU,4,0,0,0,Imported cases only,1
-Bolivia (Plurinational State of),BO,3,0,0,0,Imported cases only,2
-Puerto Rico,PR,3,0,0,0,Imported cases only,1
-Honduras,HN,2,0,0,0,Imported cases only,3
-Venezuela (Bolivarian Republic of),VE,2,0,0,0,Imported cases only,1
-Antigua and Barbuda,AG,1,0,0,0,Imported cases only,1
-Saint Vincent and the Grenadines,VC,1,0,0,0,Imported cases only,2
-Trinidad and Tobago,TT,1,0,0,0,Imported cases only,1
-French Guiana,GF,7,1,0,0,Imported cases only,2
-Martinique,MQ,10,4,0,0,Imported cases only,0
-Saint Martin,MF,2,0,0,0,Under investigation,12
-Saint Barthelemy,BL,1,0,0,0,Under investigation,12
-Cayman Islands,KY,1,0,0,0,Imported cases only,1
-Guadeloupe,GP,3,2,0,0,Imported cases only,0
-Curaçao,CW,2,2,0,0,Imported cases only,0
-South Africa,ZA,38,21,0,0,Local transmission,0
-Algeria,DZ,37,11,3,1,Local transmission,0
-Senegal,SN,21,11,0,0,Local transmission,0
-Burkina Faso,BF,3,1,0,0,Imported cases only,0
-Cameroon,CM,3,1,0,0,Local transmission,0
-Cote d'Ivoire,CI,3,2,0,0,Imported cases only,0
-Democratic Republic of the Congo,CD,2,0,0,0,Imported cases only,1
-Ghana,GH,2,1,0,0,Imported cases only,0
-Namibia,NA,2,2,0,0,Imported cases only,0
-Nigeria,NG,2,0,0,0,Imported cases only,6
-Central African Republic,CF,1,1,0,0,Imported cases only,0
-Congo,CG,1,1,0,0,Imported cases only,0
-Equatorial Guinea,GQ,1,1,0,0,Imported cases only,0
-Eswatini,SZ,1,1,0,0,Imported cases only,0
-Ethiopia,ET,1,0,0,0,Imported cases only,1
-Gabon,GA,1,0,0,0,Imported cases only,1
-Guinea,GN,1,0,0,0,Imported cases only,1
-Kenya,KE,1,0,0,0,Imported cases only,1
-Mauritania,MR,1,1,0,0,Imported cases only,0
-Togo,TG,1,0,0,0,Imported cases only,8
-Reunion,RE,6,1,0,0,Imported cases only,0
-Mayotte,YT,1,1,0,0,Imported cases only,0
+Republic of Korea,KOR,8162,76,75,3,Local transmission,0
+Japan,JPN,780,64,22,1,Local transmission,0
+Australia,AUS,249,52,3,0,Local transmission,0
+Malaysia,MYS,238,41,0,0,Local transmission,0
+Singapore,SGP,212,12,0,0,Local transmission,0
+Philippines,PHL,111,47,6,4,Local transmission,0
+Viet Nam,VNM,53,5,0,0,Local transmission,0
+Brunei Darussalam,BRN,40,15,0,0,Local transmission,0
+Cambodia,KHM,7,0,0,0,Local transmission,1
+New Zealand,NZL,6,0,0,0,Local transmission,1
+Mongolia,MNG,1,0,0,0,Imported cases only,5
+French Polynesia,PYF,3,2,0,0,Imported cases only,0
+Italy,ITA,21157,3497,1441,173,Local transmission,0
+Spain,ESP,5753,1522,136,16,Local transmission,0
+France,FRA,4469,829,91,12,Local transmission,0
+Germany,DEU,3795,733,8,2,Local transmission,0
+Switzerland,CHE,1359,234,11,5,Local transmission,0
+The United Kingdom,GBR,1144,342,21,11,Local transmission,0
+Netherlands,NLD,959,155,12,2,Local transmission,0
+Sweden,SWE,924,149,0,0,Local transmission,0
+Norway,NOR,907,157,1,0,Local transmission,0
+Denmark,DNK,827,26,0,0,Local transmission,0
+Austria,AUT,800,296,1,0,Local transmission,0
+Belgium,BEL,689,90,0,0,Local transmission,0
+Greece,GRC,228,130,2,1,Local transmission,0
+Czechia,CZE,214,64,0,0,Local transmission,0
+Finland,FIN,210,101,0,0,Local transmission,0
+Israel,ISR,178,78,0,0,Local transmission,0
+Slovenia,SVN,141,0,0,0,Local transmission,1
+Iceland,ISL,138,77,0,0,Local transmission,0
+Ireland,IRL,129,39,2,1,Local transmission,0
+Romania,ROU,123,59,0,0,Local transmission,0
+Portugal,PRT,112,0,0,0,Local transmission,1
+Poland,POL,111,47,3,2,Local transmission,0
+San Marino,SMR,92,26,5,3,Local transmission,0
+Estonia,EST,79,0,0,0,Local transmission,1
+Slovakia,SVK,44,14,0,0,Local transmission,0
+Bulgaria,BGR,43,36,2,1,Local transmission,0
+Serbia,SRB,41,10,0,0,Local transmission,0
+Albania,ALB,38,5,1,0,Local transmission,0
+Luxembourg,LUX,38,0,1,0,Local transmission,1
+Croatia,HRV,37,10,0,0,Local transmission,0
+Russian Federation,RUS,34,0,0,0,Imported cases only,2
+Hungary,HUN,32,13,0,0,Local transmission,0
+Georgia,GEO,30,5,0,0,Imported cases only,0
+Latvia,LVA,30,14,0,0,Imported cases only,0
+Belarus,BLR,21,0,0,0,Local transmission,1
+Cyprus,CYP,21,7,0,0,Imported cases only,0
+Azerbaijan,AZE,19,8,0,0,Imported cases only,0
+Bosnia and Herzegovina,BIH,18,7,0,0,Local transmission,0
+North Macedonia,MKD,13,4,0,0,Local transmission,0
+Malta,MLT,12,0,0,0,Imported cases only,2
+Republic of Moldova,MDA,12,4,0,0,Imported cases only,0
+Lithuania,LTU,9,3,0,0,Imported cases only,0
+Armenia,ARM,8,0,0,0,Local transmission,1
+Kazakhstan,KAZ,6,6,0,0,Imported cases only,0
+Turkey,TUR,5,0,0,0,Imported cases only,1
+Liechtenstein,LIE,4,0,0,0,Imported cases only,2
+Ukraine,UKR,3,0,1,0,Local transmission,1
+Andorra,AND,2,0,0,0,Imported cases only,1
+Monaco,MCO,2,0,0,0,Under investigation,1
+Holy See,VAT,1,0,0,0,Under investigation,9
+Faroe Islands,FRO,9,6,0,0,Imported cases only,0
+Gibraltar,GIB,1,0,0,0,Under investigation,11
+Guernsey,GGY,1,0,0,0,Imported cases only,5
+Jersey,JEY,2,0,0,0,Imported cases only,2
+Indonesia,IDN,117,48,4,1,Local transmission,0
+India,IND,107,25,2,0,Local transmission,0
+Thailand,THA,75,0,1,0,Local transmission,2
+Sri Lanka,LKA,11,5,0,0,Local transmission,0
+Maldives,MDV,10,1,0,0,Local transmission,0
+Bangladesh,BGD,3,0,0,0,Local transmission,6
+Bhutan,BTN,1,0,0,0,Imported cases only,9
+Nepal,NPL,1,0,0,0,Imported cases only,51
+Iran (Islamic Republic of),IRN,12729,1365,608,94,Local transmission,0
+Qatar,QAT,337,75,0,0,Local transmission,0
+Bahrain,BHR,211,1,0,0,Local transmission,0
+Kuwait,KWT,112,12,0,0,Local transmission,0
+Saudi Arabia,SAU,103,41,0,0,Local transmission,0
+Egypt,EGY,93,0,2,0,Local transmission,1
+Iraq,IRQ,93,0,9,0,Local transmission,1
+Lebanon,LBN,93,16,3,0,Local transmission,0
+United Arab Emirates,ARE,85,0,0,0,Local transmission,2
+Pakistan,PAK,28,7,0,0,Imported cases only,0
+Oman,OMN,20,1,0,0,Imported cases only,0
+Morocco,MAR,18,11,1,0,Local transmission,0
+Tunisia,TUN,16,0,0,0,Local transmission,1
+Afghanistan,AFG,10,3,0,0,Imported cases only,0
+Jordan,JOR,1,0,0,0,Imported cases only,12
+Sudan,SDN,1,0,0,0,Imported cases only,1
+Occupied Palestinian Territory,PSE,38,3,0,0,Local transmission,1
+United States of America,USA,1678,0,41,0,Local transmission,1
+Canada,CAN,244,68,1,0,Local transmission,0
+Brazil,BRA,121,23,0,0,Local transmission,0
+Chile,CHL,61,18,0,0,Local transmission,0
+Argentina,ARG,45,11,2,0,Local transmission,0
+Peru,PER,43,15,0,0,Local transmission,0
+Mexico,MEX,41,15,0,0,Imported cases only,0
+Panama,PAN,27,0,1,0,Local transmission,1
+Colombia,COL,24,8,0,0,Local transmission,0
+Costa Rica,CRI,23,0,0,0,Local transmission,1
+Ecuador,ECU,23,0,0,0,Local transmission,1
+Jamaica,JAM,8,1,0,0,Local transmission,0
+Guyana,GUY,1,0,1,0,Imported cases only,2
+Paraguay,PRY,6,0,0,0,Local transmission,1
+Dominican Republic,DOM,5,0,0,0,Imported cases only,5
+Cuba,CUB,4,0,0,0,Imported cases only,1
+Bolivia (Plurinational State of),BOL,3,0,0,0,Imported cases only,2
+Puerto Rico,PRI,3,0,0,0,Imported cases only,1
+Honduras,HND,2,0,0,0,Imported cases only,3
+Venezuela (Bolivarian Republic of),VEN,2,0,0,0,Imported cases only,1
+Antigua and Barbuda,ATG,1,0,0,0,Imported cases only,1
+Saint Vincent and the Grenadines,VCT,1,0,0,0,Imported cases only,2
+Trinidad and Tobago,TTO,1,0,0,0,Imported cases only,1
+French Guiana,GUF,7,1,0,0,Imported cases only,2
+Martinique,MTQ,10,4,0,0,Imported cases only,0
+Saint Martin,MAF,2,0,0,0,Under investigation,12
+Saint Barthelemy,BLM,1,0,0,0,Under investigation,12
+Cayman Islands,CYM,1,0,0,0,Imported cases only,1
+Guadeloupe,GLP,3,2,0,0,Imported cases only,0
+Curaçao,CUW,2,2,0,0,Imported cases only,0
+South Africa,ZAF,38,21,0,0,Local transmission,0
+Algeria,DZA,37,11,3,1,Local transmission,0
+Senegal,SEN,21,11,0,0,Local transmission,0
+Burkina Faso,BFA,3,1,0,0,Imported cases only,0
+Cameroon,CMR,3,1,0,0,Local transmission,0
+Cote d'Ivoire,CIV,3,2,0,0,Imported cases only,0
+Democratic Republic of the Congo,COD,2,0,0,0,Imported cases only,1
+Ghana,GHA,2,1,0,0,Imported cases only,0
+Namibia,NAM,2,2,0,0,Imported cases only,0
+Nigeria,NGA,2,0,0,0,Imported cases only,6
+Central African Republic,CAF,1,1,0,0,Imported cases only,0
+Congo,COG,1,1,0,0,Imported cases only,0
+Equatorial Guinea,GNQ,1,1,0,0,Imported cases only,0
+Eswatini,SWZ,1,1,0,0,Imported cases only,0
+Ethiopia,ETH,1,0,0,0,Imported cases only,1
+Gabon,GAB,1,0,0,0,Imported cases only,1
+Guinea,GIN,1,0,0,0,Imported cases only,1
+Kenya,KEN,1,0,0,0,Imported cases only,1
+Mauritania,MRT,1,1,0,0,Imported cases only,0
+Togo,TGO,1,0,0,0,Imported cases only,8
+Reunion,REU,6,1,0,0,Imported cases only,0
+Mayotte,MYT,1,1,0,0,Imported cases only,0
 International conveyance (Diamond Princess),n/a,697,0,7,0,Local transmission,1
-China,CN,81048,27,3204,10,Under investigation,0
+China,CHN,81048,27,3204,10,Under investigation,0
 Grand total,n/a,153517,10982,5735,343,n/a,n/a
