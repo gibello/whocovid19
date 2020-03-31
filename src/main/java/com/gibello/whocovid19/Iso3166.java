@@ -1,12 +1,13 @@
 package com.gibello.whocovid19;
 
 import java.util.List;
+import java.util.HashMap;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
 
 import com.neovisionaries.i18n.CountryCode;
 
@@ -44,11 +45,8 @@ public class Iso3166 {
 	}
 	
 	public static String getCountryCode(String country) {
-		if("Finland".equals(country)) return "FI"; // Finland related to FI and SF...
-		else {
-			List<CountryCode> codes = CountryCode.findByName(isoCountryName(country));
-			if(! codes.isEmpty()) return codes.get(0).toString();
-		}
+		List<CountryCode> codes = CountryCode.findByName(isoCountryName(country));
+		if(! codes.isEmpty()) return codes.get(0).getAlpha3();
 		return "n/a";
 	}
 
@@ -65,7 +63,6 @@ public class Iso3166 {
 			System.out.println(country + "=" + getCountryCode(country));
 		}
 		in.close();
-		System.out.println(CountryCode.getByCode("SF").getName());
 	}
 	
 	public static void parseDirectory(File srcDir, File destDir) throws IOException {
@@ -87,9 +84,15 @@ public class Iso3166 {
 						if(pos <= 0) continue;
 						String country = line.substring(0, pos);
 						String code;
-						if(country.startsWith("International") || country.startsWith("Grand total")) code = "n/a";
-						else if(country.contentEquals("Country")) code = "ISO-3166 code";
-						else code = getCountryCode(country);
+						if(country.startsWith("International") || country.startsWith("Grand total")) {
+							code = "n/a";
+						}
+						else if(country.contentEquals("Country")) {
+							code = "ISO-3166 code";
+						}
+						else {
+							code = getCountryCode(country);
+						}
 						out.println(country + "," + code + line.substring(pos));
 					}
 				} catch(IOException ioe) {
