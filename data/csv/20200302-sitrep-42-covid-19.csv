@@ -63,6 +63,6 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-01,Ecuador,ECU,1,0,0,0,Imported cases only,1
 2020-03-01,Algeria,DZA,1,0,0,0,Imported cases only,6
 2020-03-01,Nigeria,NGA,1,0,0,0,Imported cases only,3
-2020-03-01,International conveyance (Diamond Princess),n/a,706,1,6,0,Local transmission,0
+2020-03-01,International conveyance (Diamond Princess),---,706,1,6,0,Local transmission,0
 2020-03-01,China,CHN,80174,206,2915,42,Under investigation,0
-2020-03-01,Grand total,n/a,88948,1806,3043,66,n/a,n/a
+2020-03-01,Grand total,WLD,88948,1806,3043,66,n/a,0

@@ -189,5 +189,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-22,Uganda,UGA,1,0,0,0,Imported cases only,1
 2020-03-22,Reunion,REU,64,17,0,0,Under investigation,0
 2020-03-22,Mayotte,MYT,14,3,0,0,Imported cases only,0
-2020-03-22,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,7
-2020-03-22,Grand total,n/a,332930,40788,14510,1727,n/a,n/a
+2020-03-22,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,7
+2020-03-22,Grand total,WLD,332930,40788,14510,1727,n/a,0

@@ -200,5 +200,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-26,Mali,MLI,2,0,0,0,Imported cases only,1
 2020-03-26,Reunion,REU,135,41,0,0,Local transmission,0
 2020-03-26,Mayotte,MYT,50,15,0,0,Local transmission,0
-2020-03-26,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,11
-2020-03-26,Grand total,n/a,509164,46484,23335,2501,n/a,n/a
+2020-03-26,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,11
+2020-03-26,Grand total,WLD,509164,46484,23335,2501,n/a,0

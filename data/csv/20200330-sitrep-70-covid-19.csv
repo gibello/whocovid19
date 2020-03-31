@@ -201,5 +201,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-29,Guinea Bissau,GNB,2,0,0,0,Imported cases only,4
 2020-03-29,Reunion,REU,207,64,0,0,Local transmission,0
 2020-03-29,Mayotte,MYT,82,32,0,0,Local transmission,0
-2020-03-29,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,14
-2020-03-29,Grand total,n/a,693224,58411,33106,3215,n/a,n/a
+2020-03-29,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,14
+2020-03-29,Grand total,WLD,693224,58411,33106,3215,n/a,0

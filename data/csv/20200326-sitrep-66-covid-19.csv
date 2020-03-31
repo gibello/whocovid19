@@ -198,5 +198,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-25,Zimbabwe,ZWE,2,0,1,0,Imported cases only,4
 2020-03-25,Reunion,REU,94,11,0,0,Local transmission,0
 2020-03-25,Mayotte,MYT,35,5,0,0,Local transmission,0
-2020-03-25,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,10
-2020-03-25,Grand total,n/a,462684,49219,20834,2401,n/a,n/a
+2020-03-25,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,10
+2020-03-25,Grand total,WLD,462684,49219,20834,2401,n/a,0

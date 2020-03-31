@@ -174,5 +174,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-19,Niger,NER,1,1,0,0,Imported cases only,0
 2020-03-19,Reunion,REU,15,3,0,0,Imported cases only,0
 2020-03-19,Mayotte,MYT,4,1,0,0,Imported cases only,0
-2020-03-19,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,4
-2020-03-19,Grand total,n/a,234073,24247,9840,1061,n/a,n/a
+2020-03-19,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,4
+2020-03-19,Grand total,WLD,234073,24247,9840,1061,n/a,0

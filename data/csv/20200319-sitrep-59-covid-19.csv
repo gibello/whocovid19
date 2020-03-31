@@ -167,5 +167,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-18,Togo,TGO,1,0,0,0,Imported cases only,11
 2020-03-18,Reunion,REU,12,3,0,0,Imported cases only,0
 2020-03-18,Mayotte,MYT,3,2,0,0,Imported cases only,0
-2020-03-18,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,3
-2020-03-18,Grand total,n/a,209839,16556,8778,828,n/a,n/a
+2020-03-18,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,3
+2020-03-18,Grand total,WLD,209839,16556,8778,828,n/a,0

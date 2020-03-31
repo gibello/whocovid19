@@ -112,6 +112,6 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-10,Nigeria,NGA,2,0,0,0,Imported cases only,2
 2020-03-10,Democratic Republic of the Congo,COD,1,1,0,0,Imported cases only,0
 2020-03-10,Togo,TGO,1,0,0,0,Imported cases only,4
-2020-03-10,International conveyance (Diamond Princess),n/a,696,0,7,0,Local transmission,3
+2020-03-10,International conveyance (Diamond Princess),---,696,0,7,0,Local transmission,3
 2020-03-10,China,CHN,80955,31,3162,22,Under investigation,0
-2020-03-10,Grand total,n/a,118319,4620,4292,280,n/a,n/a
+2020-03-10,Grand total,WLD,118319,4620,4292,280,n/a,0
