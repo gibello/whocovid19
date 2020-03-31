@@ -139,8 +139,9 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-03,Algeria,DZA,5,0,0,0,Local transmission,1
 2020-03-03,Nigeria,NGA,1,0,0,0,Imported cases only,5
 2020-03-03,Senegal,SEN,1,0,0,0,Imported cases only,1
-2020-03-03,International conveyance (Diamond Princess),n/a,706,0,6,0,Local transmission,2
+2020-03-03,International conveyance (Diamond Princess),---,706,0,6,0,Local transmission,2
 2020-03-03,China,CHN,80422,120,2984,38,Under investigation,0
-2020-03-03,Grand total,n/a,93091,2223,3198,86,n/a,n/a
+2020-03-03,Grand total,WLD,93091,2223,3198,86,n/a,0
 ```
 
+Note: By convention, country code is set to "WLD" for world grand total, and "---" for facilities that are not countries (like Diamond Princess cruise ship).
