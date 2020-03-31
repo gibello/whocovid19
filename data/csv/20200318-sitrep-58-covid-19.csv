@@ -159,5 +159,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-17,United Republic of Tanzania,TZA,1,1,0,0,Imported cases only,0
 2020-03-17,Reunion,REU,9,0,0,0,Imported cases only,2
 2020-03-17,Mayotte,MYT,1,0,0,0,Imported cases only,3
-2020-03-17,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,2
-2020-03-17,Grand total,n/a,191127,15123,7807,786,n/a,n/a
+2020-03-17,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,2
+2020-03-17,Grand total,WLD,191127,15123,7807,786,n/a,0

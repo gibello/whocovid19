@@ -133,6 +133,6 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-13,Kenya,KEN,1,1,0,0,Imported cases only,0
 2020-03-13,Togo,TGO,1,0,0,0,Imported cases only,7
 2020-03-13,Reunion,REU,5,2,0,0,Imported cases only,0
-2020-03-13,International conveyance (Diamond Princess),n/a,697,1,7,0,Local transmission,0
+2020-03-13,International conveyance (Diamond Princess),---,697,1,7,0,Local transmission,0
 2020-03-13,China,CHN,81021,18,3194,14,Under investigation,0
-2020-03-13,Grand total,n/a,142534,9764,5392,437,n/a,n/a
+2020-03-13,Grand total,WLD,142534,9764,5392,437,n/a,0

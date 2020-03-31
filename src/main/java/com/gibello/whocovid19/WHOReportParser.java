@@ -52,7 +52,7 @@ public class WHOReportParser {
 		    		}
 		    	}
 		    } else if(scanner.hasNext("Grand total.*")) {
-		    	data.append(scanner.next().trim() + sep + "n/a" + sep + "n/a");
+		    	data.append(scanner.next().trim() + sep + "n/a" + sep + "0");
 		        dataScore = 0; // Out of data
 		    } else {
 		    	String line = scanner.next().trim();
@@ -154,15 +154,15 @@ public class WHOReportParser {
 				if(line.startsWith("International")) {
 					int pos = line.indexOf(sep);
 					if(pos <= 0) isData = false;
-					else line = date + sep + "International conveyance (Diamond Princess)" + line.substring(pos);
+					else line = "International conveyance (Diamond Princess)" + line.substring(pos);
 				}
 				if(line.contains("Grand total")) {
-					int pos = line.lastIndexOf("n/a");
-					line = line.substring(line.indexOf("Grand total"), pos+3);
+					int pos = line.lastIndexOf("0");
+					line = line.substring(line.indexOf("Grand total"), pos+1);
 					// Grand total gross value may contain a space (already replaced by a "sep")
 					String gtdata = line.substring(12);
 					if((pos = gtdata.indexOf(sep)) < 4) {
-						line = date + sep + "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
+						line = "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
 					}
 				}
 				if(isData) {

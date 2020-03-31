@@ -87,6 +87,6 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-05,Cameroon,CMR,1,1,0,0,Imported cases only,0
 2020-03-05,Nigeria,NGA,1,0,0,0,Imported cases only,7
 2020-03-05,South Africa,ZAF,1,1,0,0,Imported cases only,0
-2020-03-05,International conveyance (Diamond Princess),n/a,696,0,6,0,Local transmission,0
+2020-03-05,International conveyance (Diamond Princess),---,696,0,6,0,Local transmission,0
 2020-03-05,China,CHN,80711,146,3045,30,Under investigation,0
-2020-03-05,Grand total,n/a,98192,2873,3380,99,n/a,n/a
+2020-03-05,Grand total,WLD,98192,2873,3380,99,n/a,0

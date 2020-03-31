@@ -193,5 +193,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-23,Mozambique,MOZ,1,0,0,0,Imported cases only,1
 2020-03-23,Reunion,REU,71,7,0,0,Under investigation,0
 2020-03-23,Mayotte,MYT,24,10,0,0,Imported cases only,0
-2020-03-23,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,8
-2020-03-23,Grand total,n/a,372757,39827,16231,1722,n/a,n/a
+2020-03-23,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,8
+2020-03-23,Grand total,WLD,372757,39827,16231,1722,n/a,0

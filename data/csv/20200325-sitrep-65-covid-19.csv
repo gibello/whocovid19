@@ -195,5 +195,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-24,Eritrea,ERI,1,0,0,0,Imported cases only,3
 2020-03-24,Reunion,REU,83,12,0,0,Local transmission,0
 2020-03-24,Mayotte,MYT,30,6,0,0,Local transmission,0
-2020-03-24,International conveyance (Diamond Princess),n/a,712,0,7,0,Local transmission,9
-2020-03-24,Grand total,n/a,414179,40712,18440,2202,n/a,n/a
+2020-03-24,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,9
+2020-03-24,Grand total,WLD,414179,40712,18440,2202,n/a,0
