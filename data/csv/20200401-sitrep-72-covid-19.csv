@@ -1,0 +1,209 @@
+Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmission type,Days since last case
+2020-03-31,China,CHN,82631,86,3321,7,Local transmission,0
+2020-03-31,Republic of Korea,KOR,9887,101,165,3,Local transmission,0
+2020-03-31,Australia,AUS,4707,348,20,2,Local transmission,0
+2020-03-31,Malaysia,MYS,2766,140,43,6,Local transmission,0
+2020-03-31,Japan,JPN,2178,225,57,1,Local transmission,0
+2020-03-31,Philippines,PHL,2084,538,88,10,Local transmission,0
+2020-03-31,Singapore,SGP,926,47,3,0,Local transmission,0
+2020-03-31,New Zealand,NZL,647,47,1,0,Local transmission,0
+2020-03-31,Viet Nam,VNM,207,4,0,0,Local transmission,0
+2020-03-31,Brunei Darussalam,BRN,129,2,1,0,Local transmission,0
+2020-03-31,Cambodia,KHM,109,2,0,0,Local transmission,0
+2020-03-31,Mongolia,MNG,12,0,0,0,Imported cases only,4
+2020-03-31,Lao People's Democratic Republic,LAO,9,1,0,0,Local transmission,0
+2020-03-31,Fiji,FJI,5,0,0,0,Local transmission,6
+2020-03-31,Papua New Guinea,PNG,1,0,0,0,Imported cases only,11
+2020-03-31,Guam,GUM,69,11,2,1,Local transmission,0
+2020-03-31,French Polynesia,PYF,37,1,0,0,Local transmission,0
+2020-03-31,New Caledonia,NCL,16,1,0,0,Local transmission,0
+2020-03-31,Northern Mariana Islands (Commonwealth of the),MNP,2,0,0,0,Under investigation,3
+2020-03-31,Italy,ITA,105792,4053,12430,839,Local transmission,0
+2020-03-31,Spain,ESP,94417,9222,8189,849,Local transmission,0
+2020-03-31,Germany,DEU,67366,5453,732,149,Local transmission,0
+2020-03-31,France,FRA,51477,7500,3514,497,Local transmission,0
+2020-03-31,The United Kingdom,GBR,25154,3009,1789,381,Local transmission,0
+2020-03-31,Switzerland,CHE,16108,696,373,78,Local transmission,0
+2020-03-31,Turkey,TUR,13531,2704,214,46,Local transmission,0
+2020-03-31,Belgium,BEL,12775,876,705,192,Local transmission,0
+2020-03-31,Netherlands,NLD,12595,845,1039,175,Local transmission,0
+2020-03-31,Austria,AUT,10182,564,128,20,Local transmission,0
+2020-03-31,Portugal,PRT,7443,1035,160,20,Local transmission,0
+2020-03-31,Israel,ISR,5129,298,21,4,Local transmission,0
+2020-03-31,Norway,NOR,4447,221,28,2,Local transmission,0
+2020-03-31,Sweden,SWE,4435,407,180,34,Local transmission,0
+2020-03-31,Czechia,CZE,3308,306,31,7,Local transmission,0
+2020-03-31,Ireland,IRL,3235,325,71,17,Local transmission,0
+2020-03-31,Denmark,DNK,2860,283,90,13,Local transmission,0
+2020-03-31,Russian Federation,RUS,2337,500,17,8,Local transmission,0
+2020-03-31,Poland,POL,2311,256,33,2,Local transmission,0
+2020-03-31,Romania,ROU,2245,293,69,25,Local transmission,0
+2020-03-31,Luxembourg,LUX,2178,190,23,1,Local transmission,0
+2020-03-31,Finland,FIN,1384,71,17,4,Local transmission,0
+2020-03-31,Greece,GRC,1314,102,49,6,Local transmission,0
+2020-03-31,Iceland,ISL,1135,49,2,0,Local transmission,0
+2020-03-31,Serbia,SRB,900,115,13,0,Local transmission,0
+2020-03-31,Croatia,HRV,867,77,6,0,Local transmission,0
+2020-03-31,Slovenia,SVN,814,51,13,2,Local transmission,0
+2020-03-31,Estonia,EST,745,30,4,1,Local transmission,0
+2020-03-31,Ukraine,UKR,669,120,17,4,Local transmission,0
+2020-03-31,Lithuania,LTU,533,49,7,0,Local transmission,0
+2020-03-31,Armenia,ARM,532,50,3,0,Local transmission,0
+2020-03-31,Hungary,HUN,492,45,16,1,Local transmission,0
+2020-03-31,Bosnia and Herzegovina,BIH,413,54,12,3,Local transmission,0
+2020-03-31,Bulgaria,BGR,399,40,8,0,Local transmission,0
+2020-03-31,Latvia,LVA,398,22,0,0,Local transmission,0
+2020-03-31,Andorra,AND,376,6,12,4,Local transmission,0
+2020-03-31,Slovakia,SVK,363,27,0,0,Local transmission,0
+2020-03-31,Republic of Moldova,MDA,353,55,3,1,Local transmission,0
+2020-03-31,Kazakhstan,KAZ,348,36,2,1,Local transmission,0
+2020-03-31,North Macedonia,MKD,329,44,9,2,Local transmission,0
+2020-03-31,Azerbaijan,AZE,298,25,5,1,Local transmission,0
+2020-03-31,Cyprus,CYP,262,32,8,1,Local transmission,0
+2020-03-31,Albania,ALB,243,20,13,2,Local transmission,0
+2020-03-31,San Marino,SMR,236,6,26,1,Local transmission,0
+2020-03-31,Uzbekistan,UZB,173,24,2,0,Local transmission,0
+2020-03-31,Malta,MLT,167,11,0,0,Local transmission,0
+2020-03-31,Belarus,BLR,152,0,0,0,Local transmission,2
+2020-03-31,Georgia,GEO,115,12,0,0,Local transmission,0
+2020-03-31,Kyrgyzstan,KGZ,111,4,0,0,Local transmission,0
+2020-03-31,Montenegro,MNE,105,14,2,1,Local transmission,0
+2020-03-31,Liechtenstein,LIE,68,4,0,0,Under investigation,0
+2020-03-31,Monaco,MCO,52,3,0,0,Local transmission,0
+2020-03-31,Holy See,VAT,6,0,0,0,Under investigation,2
+2020-03-31,Faroe Islands,FRO,169,1,0,0,Local transmission,0
+2020-03-31,Kosovo,XKX,112,6,1,0,Local transmission,0
+2020-03-31,Gibraltar,GIB,69,0,0,0,Local transmission,1
+2020-03-31,Jersey,JEY,63,0,2,0,Local transmission,2
+2020-03-31,Guernsey,GGY,60,15,1,1,Local transmission,0
+2020-03-31,Isle of Man,IMN,52,10,0,0,Local transmission,0
+2020-03-31,Greenland,GRL,10,0,0,0,Under investigation,3
+2020-03-31,Thailand,THA,1771,247,12,3,Local transmission,0
+2020-03-31,India,IND,1636,565,38,9,Local transmission,0
+2020-03-31,Indonesia,IDN,1528,114,136,14,Local transmission,0
+2020-03-31,Sri Lanka,LKA,143,23,2,1,Local transmission,0
+2020-03-31,Bangladesh,BGD,54,5,6,1,Local transmission,0
+2020-03-31,Maldives,MDV,18,1,0,0,Local transmission,0
+2020-03-31,Myanmar,MMR,15,5,1,1,Local transmission,0
+2020-03-31,Nepal,NPL,5,0,0,0,Imported cases only,3
+2020-03-31,Bhutan,BTN,4,0,0,0,Imported cases only,2
+2020-03-31,Timor Leste,TLS,1,0,0,0,Under investigation,11
+2020-03-31,Iran (Islamic Republic of),IRN,44606,3111,2898,141,Local transmission,0
+2020-03-31,Pakistan,PAK,2039,174,26,1,Local transmission,0
+2020-03-31,Saudi Arabia,SAU,1563,110,10,2,Local transmission,0
+2020-03-31,Qatar,QAT,781,88,2,1,Local transmission,0
+2020-03-31,Egypt,EGY,710,54,46,5,Local transmission,0
+2020-03-31,Iraq,IRQ,694,64,50,4,Local transmission,0
+2020-03-31,United Arab Emirates,ARE,664,53,6,1,Local transmission,0
+2020-03-31,Morocco,MAR,638,64,36,3,Local transmission,0
+2020-03-31,Bahrain,BHR,567,52,4,0,Local transmission,0
+2020-03-31,Lebanon,LBN,463,17,12,1,Local transmission,0
+2020-03-31,Tunisia,TUN,394,32,10,1,Local transmission,0
+2020-03-31,Kuwait,KWT,289,23,0,0,Local transmission,0
+2020-03-31,Jordan,JOR,274,6,5,0,Local transmission,0
+2020-03-31,Oman,OMN,210,31,1,1,Local transmission,0
+2020-03-31,Afghanistan,AFG,192,26,4,0,Local transmission,0
+2020-03-31,Djibouti,DJI,31,5,0,0,Local transmission,0
+2020-03-31,Libya,LBY,10,2,0,0,Local transmission,0
+2020-03-31,Syrian Arab Republic,SYR,10,0,2,0,Imported cases only,1
+2020-03-31,Sudan,SDN,7,1,2,0,Imported cases only,0
+2020-03-31,Somalia,SOM,5,2,0,0,Imported cases only,0
+2020-03-31,Occupied Palestinian Territory,PSE,134,17,1,0,Local transmission,0
+2020-03-31,United States of America,USA,163199,22559,2850,452,Local transmission,0
+2020-03-31,Canada,CAN,7695,1378,89,23,Local transmission,0
+2020-03-31,Brazil,BRA,4579,323,159,23,Local transmission,0
+2020-03-31,Chile,CHL,2738,289,12,4,Local transmission,0
+2020-03-31,Ecuador,ECU,2240,278,75,15,Local transmission,0
+2020-03-31,Dominican Republic,DOM,1109,208,51,9,Local transmission,0
+2020-03-31,Mexico,MEX,1094,101,28,8,Local transmission,0
+2020-03-31,Peru,PER,1065,213,24,13,Local transmission,0
+2020-03-31,Panama,PAN,989,0,24,0,Local transmission,1
+2020-03-31,Argentina,ARG,966,146,24,4,Local transmission,0
+2020-03-31,Colombia,COL,798,96,14,4,Local transmission,0
+2020-03-31,Uruguay,URY,320,11,1,1,Local transmission,0
+2020-03-31,Costa Rica,CRI,314,0,2,0,Local transmission,1
+2020-03-31,Cuba,CUB,186,16,6,2,Local transmission,0
+2020-03-31,Honduras,HND,139,0,2,0,Local transmission,1
+2020-03-31,Venezuela (Bolivarian Republic of),VEN,129,0,3,0,Local transmission,1
+2020-03-31,Bolivia (Plurinational State of),BOL,107,10,6,1,Local transmission,0
+2020-03-31,Trinidad and Tobago,TTO,85,3,3,0,Local transmission,0
+2020-03-31,Paraguay,PRY,65,1,3,0,Local transmission,0
+2020-03-31,Guatemala,GTM,36,0,1,0,Local transmission,1
+2020-03-31,Jamaica,JAM,36,0,1,0,Local transmission,1
+2020-03-31,Barbados,BRB,33,0,0,0,Local transmission,1
+2020-03-31,El Salvador,SLV,30,0,0,0,Local transmission,1
+2020-03-31,Haiti,HTI,15,0,0,0,Imported cases only,2
+2020-03-31,Bahamas,BHS,14,0,0,0,Local transmission,1
+2020-03-31,Guyana,GUY,12,4,2,1,Local transmission,0
+2020-03-31,Dominica,DMA,11,0,0,0,Local transmission,5
+2020-03-31,Grenada,GRD,9,0,0,0,Local transmission,1
+2020-03-31,Saint Lucia,LCA,9,0,0,0,Local transmission,1
+2020-03-31,Saint Kitts and Nevis,KNA,8,6,0,0,Imported cases only,0
+2020-03-31,Suriname,SUR,8,0,0,0,Imported cases only,4
+2020-03-31,Antigua and Barbuda,ATG,7,0,0,0,Imported cases only,4
+2020-03-31,Nicaragua,NIC,4,0,1,0,Imported cases only,3
+2020-03-31,Belize,BLZ,3,0,0,0,Local transmission,1
+2020-03-31,Saint Vincent and the Grenadines,VCT,1,0,0,0,Imported cases only,19
+2020-03-31,Puerto Rico,PRI,239,65,8,2,Local transmission,0
+2020-03-31,Martinique,MTQ,119,8,2,0,Local transmission,0
+2020-03-31,Guadeloupe,GLP,114,8,5,1,Local transmission,0
+2020-03-31,Aruba,ABW,55,5,0,0,Local transmission,0
+2020-03-31,French Guiana,GUF,46,3,0,0,Local transmission,0
+2020-03-31,United States Virgin Islands,VIR,30,0,0,0,Local transmission,1
+2020-03-31,Bermuda,BMU,27,5,0,0,Local transmission,0
+2020-03-31,Saint Martin,MAF,18,0,2,1,Under investigation,1
+2020-03-31,Cayman Islands,CYM,12,0,1,0,Imported cases only,1
+2020-03-31,Curaçao,CUW,11,0,1,0,Imported cases only,1
+2020-03-31,Saint Barthelemy,BLM,6,0,0,0,Under investigation,1
+2020-03-31,Sint Maarten,SXM,6,0,0,0,Imported cases only,1
+2020-03-31,Montserrat,MSR,5,0,0,0,Imported cases only,4
+2020-03-31,Turks and Caicos Islands,TCA,5,0,0,0,Local transmission,1
+2020-03-31,British Virgin Islands,VGB,3,1,0,0,Imported cases only,0
+2020-03-31,Anguilla,AIA,2,0,0,0,Local transmission,5
+2020-03-31,South Africa,ZAF,1353,27,5,2,Local transmission,0
+2020-03-31,Algeria,DZA,584,73,35,4,Local transmission,0
+2020-03-31,Burkina Faso,BFA,261,15,14,2,Local transmission,0
+2020-03-31,Senegal,SEN,175,13,0,0,Local transmission,0
+2020-03-31,Cote d'Ivoire,CIV,169,0,0,0,Local transmission,1
+2020-03-31,Ghana,GHA,152,0,5,0,Local transmission,2
+2020-03-31,Mauritius,MUS,143,36,5,3,Local transmission,0
+2020-03-31,Cameroon,CMR,139,0,6,0,Local transmission,1
+2020-03-31,Nigeria,NGA,111,0,1,0,Local transmission,1
+2020-03-31,Democratic Republic of the Congo,COD,109,11,8,0,Local transmission,0
+2020-03-31,Rwanda,RWA,75,5,0,0,Local transmission,0
+2020-03-31,Madagascar,MDG,53,7,0,0,Local transmission,0
+2020-03-31,Kenya,KEN,50,12,1,0,Local transmission,0
+2020-03-31,Zambia,ZMB,35,0,0,0,Local transmission,1
+2020-03-31,Togo,TGO,34,0,1,0,Local transmission,1
+2020-03-31,Uganda,UGA,33,0,0,0,Local transmission,2
+2020-03-31,Ethiopia,ETH,26,3,0,0,Local transmission,0
+2020-03-31,Niger,NER,20,0,3,0,Local transmission,2
+2020-03-31,Congo,COG,19,0,0,0,Imported cases only,4
+2020-03-31,United Republic of Tanzania,TZA,19,0,1,1,Under investigation,1
+2020-03-31,Mali,MLI,18,0,0,0,Local transmission,3
+2020-03-31,Guinea,GIN,16,0,0,0,Local transmission,2
+2020-03-31,Equatorial Guinea,GNQ,14,0,0,0,Local transmission,1
+2020-03-31,Namibia,NAM,11,0,0,0,Imported cases only,2
+2020-03-31,Benin,BEN,9,3,0,0,Imported cases only,0
+2020-03-31,Eswatini,SWZ,9,0,0,0,Imported cases only,4
+2020-03-31,Guinea Bissau,GNB,9,7,0,0,Imported cases only,0
+2020-03-31,Mozambique,MOZ,8,0,0,0,Local transmission,3
+2020-03-31,Seychelles,SYC,8,0,0,0,Imported cases only,2
+2020-03-31,Zimbabwe,ZWE,8,3,1,0,Local transmission,0
+2020-03-31,Angola,AGO,7,5,2,2,Imported cases only,0
+2020-03-31,Chad,TCD,7,2,0,0,Imported cases only,0
+2020-03-31,Gabon,GAB,7,0,1,0,Imported cases only,4
+2020-03-31,Central African Republic,CAF,6,0,0,0,Imported cases only,4
+2020-03-31,Eritrea,ERI,6,0,0,0,Imported cases only,5
+2020-03-31,Cabo Verde,CPV,5,0,1,0,Imported cases only,4
+2020-03-31,Mauritania,MRT,5,0,0,0,Imported cases only,3
+2020-03-31,Botswana,BWA,3,3,0,0,Imported cases only,0
+2020-03-31,Gambia,GMB,3,0,1,0,Imported cases only,3
+2020-03-31,Liberia,LBR,3,0,0,0,Local transmission,10
+2020-03-31,Burundi,BDI,2,2,0,0,Imported cases only,0
+2020-03-31,Sierra Leone,SLE,1,1,0,0,Imported cases only,0
+2020-03-31,Reunion,REU,247,40,0,0,Local transmission,0
+2020-03-31,Mayotte,MYT,101,19,0,0,Local transmission,0
+2020-03-31,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,16
+2020-03-31,Grand total,WLD,823626,72,736,40,598,4193,n/a,0
+
