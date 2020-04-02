@@ -205,5 +205,5 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-03-31,Reunion,REU,247,40,0,0,Local transmission,0
 2020-03-31,Mayotte,MYT,101,19,0,0,Local transmission,0
 2020-03-31,International conveyance (Diamond Princess),---,712,0,7,0,Local transmission,16
-2020-03-31,Grand total,WLD,823626,72,736,40,598,4193,n/a,0
+2020-03-31,Grand total,WLD,823626,72736,40598,4193,n/a,0
 
