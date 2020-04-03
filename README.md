@@ -16,6 +16,16 @@ To aggregate all data in one single file, you may use the following unix command
 for f in *.csv; do tail -n +2 $f >> /tmp/data.csv; done
 ```
 
+To load data in a MySQL database, the following statements should fit (if using a daily report, with 1st line containing metadata, add "IGNORE 1 ROWS" to the "LOAD DATA" statement):
+
+```
+mysql> create table whocovid19 (date DATE, country_name VARCHAR(255), country_code VARCHAR(4), confirmed_cases INT, new_cases INT, deaths INT, new_deaths INT, transmission_type VARCHAR(32), days_since_last_case INT, PRIMARY KEY(date, country_code));
+Query OK, 0 rows affected (0.41 sec)
+mysql> LOAD DATA LOCAL INFILE '/tmp/data.csv' INTO TABLE whocovid19 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+Query OK, 4877 rows affected, 29 warnings (2.40 sec)
+Records: 4879  Deleted: 0  Skipped: 2  Warnings: 29
+```
+
 ## Why are data important ?
 
 Data can help people discover new things. They can be related to epidemiology (refine knowledge about how the virus spreads, when, where, for how long...), but may also help new ideas to emerge (correlate virus spread with external factors, like pollution, sociological facts, economy... by using other available data sources).
