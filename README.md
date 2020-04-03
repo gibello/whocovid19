@@ -10,6 +10,12 @@ https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-report
 
 Parser should not work for reports published before March 2, 2020 (data as of march 1st).
 
+To aggregate all data in one single file, you may use the following unix command (in the example below, it is assumed the command is run in the directory where the csv files are, and the aggregated data is output in /tmp/data.csv):
+
+```
+for f in *.csv; do tail -n +2 $f >> /tmp/data.csv; done
+```
+
 ## Why are data important ?
 
 Data can help people discover new things. They can be related to epidemiology (refine knowledge about how the virus spreads, when, where, for how long...), but may also help new ideas to emerge (correlate virus spread with external factors, like pollution, sociological facts, economy... by using other available data sources).
