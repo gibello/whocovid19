@@ -166,12 +166,15 @@ public class WHOReportParser {
 					}
 				}
 				if(isData) {
-					// Fix country name if required
-					int pos = line.indexOf(sep);
-					String country = line.substring(0, pos);
-					String fix = fixCountryName(country);
-					line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
-					data.append(line.trim() + "\n");
+					// Filter out too weird lines (sometimes pdf syntax not clean)
+					if(Character.isAlphabetic(line.charAt(0)) && line.indexOf(sep) > 0 && line.length() > 20) {
+						// Fix country name if required
+						int pos = line.indexOf(sep);
+						String country = line.substring(0, pos);
+						String fix = fixCountryName(country);
+						line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
+						data.append(line.trim() + "\n");
+					}
 				}
 			}
 		}
