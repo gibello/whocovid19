@@ -13,7 +13,7 @@ Parser should not work for reports published before March 2, 2020 (data as of ma
 To aggregate all data in one single file, you may use the following unix command (in the example below, it is assumed the command is run in the directory where the csv files are, and the aggregated data is output in /tmp/data.csv):
 
 ```
-for f in *.csv; do tail -n +2 $f >> /tmp/data.csv; done
+for f in *.csv; do tail -n +2 $f|sed '/^$/d' >> /tmp/data.csv; done
 ```
 
 To load data in a MySQL database, the following statements should fit (if using a daily report, with 1st line containing metadata, add "IGNORE 1 ROWS" to the "LOAD DATA" statement; if you do not wish to overwrite existing data, remove "REPLACE" option):
