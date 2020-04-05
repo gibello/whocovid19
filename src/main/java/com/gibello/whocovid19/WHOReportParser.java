@@ -197,6 +197,8 @@ public class WHOReportParser {
 		names.put("the United States", "United States of America");
 		names.put("Cote d Ivoire", "Cote d'Ivoire"); // The quote in who report is not a real quote for this country...
 		names.put("Curacao", "Curaçao");
+		names.put("Lao People s Democratic Republic", "Lao People's Democratic Republic");
+		names.put("Bonaire  Sint Eustatius and Saba", "Bonaire Sint Eustatius and Saba"); // Should be a comma after "Bonaire"... but CSV issue !
 		String ret = names.get(name);
 		return (ret == null ? name : ret);
 	}
