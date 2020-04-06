@@ -35,6 +35,7 @@ public class Iso3166 {
 		names.put("United States Virgin Islands", "Virgin Islands, U.S.");
 		names.put("Venezuela (Bolivarian Republic of)", "Venezuela.*");
 		names.put("Bonaire Sint Eustatius and Saba", "Bonaire.*");
+		names.put("Falkland Islands (Malvinas)", "Falkland.*");
 		String ret = names.get(name);
 		return (ret == null ? name : ret);
 	}
