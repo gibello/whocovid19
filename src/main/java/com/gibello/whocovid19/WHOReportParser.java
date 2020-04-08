@@ -98,7 +98,9 @@ public class WHOReportParser {
 			char c = raw.charAt(i);
 			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')' || c == '\''
 					|| c == '[' || c == ']')) raw.setCharAt(i, ' ');
+			if(c == 'ã') raw.setCharAt(i, 'a');
 			if(c == 'é') raw.setCharAt(i, 'e');
+			if(c == 'í') raw.setCharAt(i, 'i');
 			if(c == 'ô') raw.setCharAt(i, 'o');
 		}
 		if(! rawData.contains("Hubei")) return raw.toString(); // China among other countries
