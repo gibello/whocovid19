@@ -31,7 +31,7 @@ public class WHOReportParser {
 		PDDocument document = PDDocument.load(pdfReport);
 		PDFTextStripper stripper = new PDFTextStripper();
 		stripper.setStartPage(2);
-		stripper.setEndPage(8);
+		stripper.setEndPage(9);
 
 		StringBuilder chn = new StringBuilder();
 		String raw = preProcess(stripper.getText(document), sep, chn);
@@ -167,9 +167,9 @@ public class WHOReportParser {
 						line = "Grand total" + sep + gtdata.substring(0, pos) + gtdata.substring(pos+1);
 					}
 				}
-				if(isData) {
+				if(isData && line.length() > 20) {
 					// Filter out too weird lines (sometimes pdf syntax not clean)
-					if(Character.isAlphabetic(line.charAt(0)) && line.indexOf(sep) > 0 && line.length() > 20) {
+					if(Character.isAlphabetic(line.charAt(0)) && line.indexOf(sep) > 0) {
 						// Fix country name if required
 						int pos = line.indexOf(sep);
 						String country = line.substring(0, pos);
