@@ -103,8 +103,28 @@ public class WHOReportParser {
 			if(c == 'í') raw.setCharAt(i, 'i');
 			if(c == 'ô') raw.setCharAt(i, 'o');
 		}
-		if(! rawData.contains("Hubei")) return raw.toString(); // China among other countries
-		else { // China report by province (before march 16, 2020)
+
+		if(! rawData.contains("Hubei")) { // China among other countries
+			// Issue with "Community Transmission" (on 3 lines: country name + data / "Community" / "Transmission" + days since last case)
+			StringBuilder data = new StringBuilder();
+			Scanner scanner = new Scanner(raw.toString());
+			scanner.useDelimiter("[\r\n]");
+			String prevLine = "";
+			while (scanner.hasNext()) {
+				String line = scanner.next().trim();
+				if(line.equals("Community")) continue;
+				
+				if(line.startsWith("Transmission")) {
+					data.append(prevLine + ",Community " + line + "\n");
+				}
+				else data.append(prevLine + "\n");
+
+				prevLine = line;
+			}
+			scanner.close();
+			return data.toString();
+
+		} else { // China report by province (before march 16, 2020)
 			StringBuilder data = new StringBuilder();
 			Scanner scanner = new Scanner(raw.toString());
 			scanner.useDelimiter("[\r\n]");
