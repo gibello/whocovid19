@@ -34,6 +34,11 @@ The more exploitable data sources are available, the more public, private or ind
 
 Open data is certainly a key driver of future social progress, knowledge, freedom, and democracy.
 
+## Acknowledgements
+
+I am very grateful to my employer, [OW2](http://www.ow2.org), who kindly let me parse WHO data when I need to, although it's not my job !\
+OW2 is a major actor of open-source, and any step toward more openness is on their agenda, as it is on mine :)
+
 ## Are there other data sources ?
 
 Among data sources available, I would recommend these ones:
