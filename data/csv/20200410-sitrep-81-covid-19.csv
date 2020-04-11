@@ -157,7 +157,7 @@ Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmiss
 2020-04-09,Curaçao,CUW,14,0,1,0,Sporadic Cases,1
 2020-04-09,Montserrat,MSR,8,0,0,0,Sporadic Cases,1
 2020-04-09,Turks and Caicos Islands,TCA,8,0,1,0,Sporadic Cases,2
-2020-04-09,Saint Barthelemy,BLM,6,0,0,0,10
+2020-04-09,Saint Barthelemy,BLM,6,0,0,0,Pending,10
 2020-04-09,Falkland Islands (Malvinas),FLK,5,0,0,0,Sporadic Cases,1
 2020-04-09,Anguilla,AIA,3,0,0,0,Sporadic Cases,6
 2020-04-09,British Virgin Islands,VGB,3,0,0,0,Sporadic Cases,9
