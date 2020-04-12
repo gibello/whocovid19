@@ -114,7 +114,7 @@ public class WHOReportParser {
 				String line = scanner.next().trim();
 				if(line.equals("Community")) continue;
 				
-				if(line.startsWith("Transmission")) {
+				if(line.startsWith("ransmission", 1)) {
 					data.append(prevLine + ",Community " + line + "\n");
 				}
 				else data.append(prevLine + "\n");
