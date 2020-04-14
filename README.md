@@ -3,7 +3,9 @@
 Parse WHO covid19 PDF reports, and provide data by country in CSV format.
 This repository provides the extracted CSV data (starting from march 1, 2020) + the parser source code.
 
-**Latest parsed data (CSV) are here: [data/csv](data/csv)** . Note that files are named against their date of publication + report #, and the date corresponds to data collected the day before (eg. 20200322-sitrep-62-covid-19.csv contains data as of march 21, and is report #62). Same naming convention as WHO reports.
+**Complete data (since march 1, 2020) are here (immutable link): [global_who_data.csv](global_who_data.csv)**.
+
+**Daily parsed data files (CSV) are here: [data/csv](data/csv)** . Note that files are named against their date of publication + report #, and the date corresponds to data collected the day before (eg. 20200322-sitrep-62-covid-19.csv contains data as of march 21, and is report #62). Same naming convention as WHO reports.
 
 WHO reports available here:
 https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
