@@ -113,8 +113,10 @@ public class WHOReportParser {
 			while (scanner.hasNext()) {
 				String line = scanner.next().trim();
 				if(line.equals("Community")) continue;
-				
-				if(line.startsWith("ransmission", 1)) {
+
+				// "Community" may be alone on one line, or "transmission"
+				// See for example reports #85 and #86 (data as of O4/14 and 04/15).
+				if(line.startsWith("ransmission", 1) && ! prevLine.endsWith("Community")) {
 					data.append(prevLine + ",Community " + line + "\n");
 				}
 				else data.append(prevLine + "\n");
