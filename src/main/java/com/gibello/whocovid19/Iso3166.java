@@ -20,6 +20,8 @@ public class Iso3166 {
 		names.put("Iran (Islamic Republic of)", "Iran, Islamic.*");
 		names.put("Kosovo", "Kosovo.*");
 		names.put("Northern Mariana Islands (Commonwealth of the)", "Northern Mariana Islands.*");
+		names.put("Northern Mariana Islands (Common wealth of the)", "Northern Mariana Islands.*");
+		names.put("Northern Mariana Islands (Common-wealth of the)", "Northern Mariana Islands.*");
 		names.put("North Macedonia", "North Macedonia, Republic of");
 		names.put("Occupied Palestinian Territory", "Palestine.*");
 		names.put("Republic of Korea", "Korea, Republic of");
