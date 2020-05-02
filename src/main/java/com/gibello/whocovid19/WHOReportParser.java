@@ -44,7 +44,8 @@ public class WHOReportParser {
 			// Warning for datascore calculation: old reports have been pre-processed (all China province data removed).
 			if(scanner.hasNext(".*Days since.*")) dataScore++;
 			if(scanner.hasNext(".*Data as of.*")) dataScore++;
-		    if (scanner.hasNext(".*egion.*")) {
+			// Starting May 2... 1st region "Africa" (and no more "region" in name, like in previous "African Region")
+		    if (scanner.hasNext(".*egion.*") || scanner.hasNext("Africa")) {
 		    	String line = scanner.next();
 		    	if(! inData()) {
 		    		if(line.length() < 40) {
@@ -57,7 +58,15 @@ public class WHOReportParser {
 		    } else {
 		    	String line = scanner.next().trim();
 		    	boolean endOfLine = line.matches(".*\\d+$");
-		    	if(inData() && !line.startsWith("Territories") && !line.startsWith("Subtotal")) {
+		    	if(inData() && !line.startsWith("Territories") && !line.startsWith("Subtotal")
+		    			&& !line.startsWith("Reporting") && !line.startsWith("Territory") && !line.startsWith("Total")
+		    			// region names to be filtered (since May 2)
+		    			&& !line.startsWith("Africa") && !line.startsWith("Americas") && !line.startsWith("Eastern Mediterranean") && !line.startsWith("Europe")
+		    			&& !line.startsWith("South-East Asia") && !line.startsWith("Western Pacific")
+		    			//TODO New issues since may 2 new format (filter below) - to be checked ?
+		    			&& !line.contains("classification") && !line.contains("Days") && !line.contains("reported case")
+		    			&& !line.equals("cases") && !line.equals("new cases")) {
+		    		//System.out.println("########" + line);
 		    		data.append(line + (endOfLine ? "\n" : " "));
 		    	}
 		    }
@@ -97,7 +106,7 @@ public class WHOReportParser {
 		for(int i=0; i<raw.length(); i++) {
 			char c = raw.charAt(i);
 			if(! (Character.isLetterOrDigit(c) || Character.isWhitespace(c) || c == '(' || c == ')' || c == '\''
-					|| c == '[' || c == ']')) raw.setCharAt(i, ' ');
+					|| c == '[' || c == ']' || c == '-')) raw.setCharAt(i, ' ');
 			if(c == 'ã') raw.setCharAt(i, 'a');
 			if(c == 'é') raw.setCharAt(i, 'e');
 			if(c == 'í') raw.setCharAt(i, 'i');
@@ -179,6 +188,10 @@ public class WHOReportParser {
 					int pos = line.indexOf(sep);
 					if(pos <= 0) isData = false;
 					else line = "International conveyance (Diamond Princess)" + line.substring(pos);
+				}
+				// Starting May 2, "International conveyance (Diamond Princess)" is now called "Other"...
+				if(line.startsWith("Other")) {
+					line = line.replace("Other", "International conveyance (Diamond Princess)").replace("-", "n/a");
 				}
 				if(line.contains("Grand total")) {
 					int pos = line.lastIndexOf("0");
