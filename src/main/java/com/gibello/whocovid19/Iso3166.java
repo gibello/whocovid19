@@ -45,7 +45,7 @@ public class Iso3166 {
 	public static String getCountryCode(String country) {
 		List<CountryCode> codes = CountryCode.findByName(isoCountryName(country));
 		if(! codes.isEmpty()) return codes.get(0).getAlpha3();
-		else if(country.startsWith("International")) return "---";
+		else if(country.startsWith("International") || country.startsWith("Other")) return "---";
 		else if(country.startsWith("Grand total")) return "WLD";
 		return "n/a";
 	}
