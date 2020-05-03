@@ -53,7 +53,11 @@ public class WHOReportParser {
 		    		}
 		    	}
 		    } else if(scanner.hasNext("Grand total.*")) {
-		    	data.append(scanner.next().trim() + sep + "n/a" + sep + "0");
+		    	String gt = scanner.next().trim();
+		    	if(gt.equals("Grand total")) { // Grand total on 2 lines...
+		    		data.append(gt + sep + scanner.next().trim() + sep + "n/a" + sep + "0");
+		    	}
+		    	else data.append(gt + sep + "n/a" + sep + "0"); // Grand total on single line (always before may 3)
 		        dataScore = 0; // Out of data
 		    } else {
 		    	String line = scanner.next().trim();
