@@ -3,16 +3,13 @@ package com.gibello.whocovid19;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.Date;
+
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
@@ -88,7 +85,7 @@ public class WHOReportParser {
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
 			currentDate = LocalDate.parse(date, formatter);
 		} catch(DateTimeParseException e) {
-			currentDate = LocalDate.now();
+			currentDate = LocalDate.now().minusDays(1); // Report supposedly of yesterday
 		}
 		return currentDate.minusDays(1).toString();
 	}
@@ -214,7 +211,8 @@ public class WHOReportParser {
 						String country = line.substring(0, pos);
 						String fix = fixCountryName(country);
 						line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
-						data.append(line.trim() + "\n");
+						//data.append(line.trim() + "\n");
+						data.append(fixLineFigures(line));
 					}
 				}
 			}
@@ -222,7 +220,69 @@ public class WHOReportParser {
 		scanner.close();
 		return data.toString();
 	}
-	
+
+	/**
+	 * Some figures may contain spaces in source PDF (eg. 10 000 for 10000). Try to fix that...
+	 * @param line The line with possibly too many tokens (spaces have been replaced by commas)
+	 * @return The line with exactly 9 tokens
+	 */
+	private static String fixLineFigures(String line) {
+		String ret = line.trim() + "\n";
+		String values[] = new String[9];
+		String strings[] = new String[4];
+		String elements[] = new String[9];
+		int nbval = 0;
+		int nbstrings = 0;
+		StringTokenizer st = new StringTokenizer(line, ",");
+		while(st.hasMoreTokens()) {
+			String token = st.nextToken();
+			try {
+				Integer.parseInt(token);
+				values[nbval++] = token; // Do not parse int (may start with 0)
+			} catch(Exception ignore) {
+				strings[nbstrings++] = token;
+			}
+		}
+		elements[0] = strings[0];
+		elements[1] = strings[1];
+		elements[2] = strings[2];
+		elements[7] = strings[3];
+		
+		// There should be 5 numbers in line...
+		if(nbval == 5) {
+			return ret;
+		} else if(nbval == 6) { // Space in "confirmed cases"
+			elements[3] = values[0] + values[1];
+			elements[4] = values[2];
+			elements[5] = values[3];
+			elements[6] = values[4];
+			elements[8] = values[5];
+		} else if(nbval == 7) { // Space in "confirmed cases" + "Deaths"
+			elements[3] = values[0] + values[1]; 	// confirmed cases
+			elements[4] = values[2]; 				// new cases
+			elements[5] = values[3] + values[4];	// deaths
+			elements[6] = values[5];				// new deaths
+			if(Integer.parseInt(elements[5]) >= Integer.parseInt(elements[3])) {
+				elements[4] = values[2] + values[3];
+				elements[5] = values[4];
+			}
+			elements[8] = values[6];
+		} else if(nbval >= 8) { // Space in "confirmed cases" + "New cases" + "Deaths"
+			elements[3] = values[0] + values[1] + (nbval > 8 ? values[2] : "");
+			int shift = (nbval > 8 ? 1 : 0);
+			elements[4] = values[2+shift] + values[3+shift];
+			elements[5] = values[4+shift] + values[5+shift];
+			elements[6] = values[6+shift];
+			elements[8] = values[7+shift];
+		}
+		StringBuilder result = new StringBuilder();
+		for (int i=0; i<9; i++) {
+			result.append((i == 0 ? "" : ",") + elements[i]);
+		}
+		System.err.println("Warning: check required for " + result.toString().substring(11));
+		return result.toString() + "\n";
+	}
+
 	/**
 	 * Country names are a bit fuzzy in WHO reports...
 	 * Try to fix them when possible
