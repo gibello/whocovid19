@@ -212,7 +212,7 @@ public class WHOReportParser {
 						String fix = fixCountryName(country);
 						line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
 						//data.append(line.trim() + "\n");
-						data.append(fixLineFigures(line));
+						data.append(fixLineFigures(line, sep));
 					}
 				}
 			}
@@ -226,14 +226,14 @@ public class WHOReportParser {
 	 * @param line The line with possibly too many tokens (spaces have been replaced by commas)
 	 * @return The line with exactly 9 tokens
 	 */
-	private static String fixLineFigures(String line) {
+	private static String fixLineFigures(String line, char sep) {
 		String ret = line.trim() + "\n";
 		String values[] = new String[9];
 		String strings[] = new String[4];
 		String elements[] = new String[9];
 		int nbval = 0;
 		int nbstrings = 0;
-		StringTokenizer st = new StringTokenizer(line, ",");
+		StringTokenizer st = new StringTokenizer(line, Character.toString(sep));
 		while(st.hasMoreTokens()) {
 			String token = st.nextToken();
 			try {
@@ -277,7 +277,7 @@ public class WHOReportParser {
 		}
 		StringBuilder result = new StringBuilder();
 		for (int i=0; i<9; i++) {
-			result.append((i == 0 ? "" : ",") + elements[i]);
+			result.append((i == 0 ? "" : sep) + elements[i]);
 		}
 		System.err.println("Warning: check required for " + result.toString().substring(11));
 		return result.toString() + "\n";
