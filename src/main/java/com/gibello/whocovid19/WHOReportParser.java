@@ -291,6 +291,7 @@ public class WHOReportParser {
 	 */
 	private static String fixCountryName(String name) {
 		HashMap<String, String> names = new HashMap<String, String>();
+		if(name.contains("Kosovo")) name = "Kosovo"; // Sometimes weird name appears for Kosovo...
 		names.put("occupied Palestinian territory", "Occupied Palestinian Territory");
 		names.put("Occupied Palestinian territory", "Occupied Palestinian Territory");
 		names.put("occupied Palestinian Territory", "Occupied Palestinian Territory");
