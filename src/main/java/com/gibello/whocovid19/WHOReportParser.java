@@ -229,7 +229,7 @@ public class WHOReportParser {
 	private static String fixLineFigures(String line, char sep) {
 		String ret = line.trim() + "\n";
 		String values[] = new String[9];
-		String strings[] = new String[4];
+		String strings[] = new String[5];
 		String elements[] = new String[9];
 		int nbval = 0;
 		int nbstrings = 0;
@@ -239,7 +239,7 @@ public class WHOReportParser {
 			try {
 				Integer.parseInt(token);
 				values[nbval++] = token; // Do not parse int (may start with 0)
-			} catch(Exception ignore) {
+			} catch(Exception e) {
 				strings[nbstrings++] = token;
 			}
 		}
@@ -250,7 +250,7 @@ public class WHOReportParser {
 		
 		// There should be 5 numbers in line...
 		if(nbval == 5) {
-			return ret;
+			return ret;  // NO CHECK WAS REQUIRED !
 		} else if(nbval == 6) { // Space in "confirmed cases"
 			elements[3] = values[0] + values[1];
 			elements[4] = values[2];
@@ -279,7 +279,14 @@ public class WHOReportParser {
 		for (int i=0; i<9; i++) {
 			result.append((i == 0 ? "" : sep) + elements[i]);
 		}
-		System.err.println("Warning: check required for " + result.toString().substring(11));
+		
+		boolean toCheck = (nbstrings > 4 || nbval > 8); // Very suspicious syntax...
+		if(! toCheck) {
+			toCheck = (Integer.parseInt(elements[3]) > 99999 // More than 100.000 confirmed
+					|| Integer.parseInt(elements[4]) > 9999); // Many new cases
+			if(! toCheck) toCheck = (Integer.parseInt(elements[8]) > 0); // At least & day since last
+		}
+		if(toCheck) System.err.println("Warning: check required for " + result.toString().substring(11));
 		return result.toString() + "\n";
 	}
 
