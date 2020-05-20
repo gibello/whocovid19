@@ -282,9 +282,11 @@ public class WHOReportParser {
 		
 		boolean toCheck = (nbstrings > 4 || nbval > 8); // Very suspicious syntax...
 		if(! toCheck) {
-			toCheck = (Integer.parseInt(elements[3]) > 99999 // More than 100.000 confirmed
+			try {
+				toCheck = (Integer.parseInt(elements[3]) > 99999 // More than 100.000 confirmed
 					|| Integer.parseInt(elements[4]) > 9999); // Many new cases
-			if(! toCheck) toCheck = (Integer.parseInt(elements[8]) > 0); // At least & day since last
+				if(! toCheck) toCheck = (Integer.parseInt(elements[8]) > 0); // At least & day since last
+			} catch(Exception e) { toCheck = true; }
 		}
 		if(toCheck) System.err.println("Warning: check required for " + result.toString().substring(11));
 		return result.toString() + "\n";
