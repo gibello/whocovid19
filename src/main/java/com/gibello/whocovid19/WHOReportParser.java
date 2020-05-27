@@ -185,7 +185,7 @@ public class WHOReportParser {
 
 				// Specific issue with "Grand total" and "Diamond princess" lines (as "Diamond princess" title is sometimes multi-line)
 				// Patch that !
-				if(line.startsWith("International")) {
+				if(line.startsWith("International") && ! line.contains("vessel")) {
 					int pos = line.indexOf(sep);
 					if(pos <= 0) isData = false;
 					else line = "International conveyance (Diamond Princess)" + line.substring(pos);
@@ -229,7 +229,7 @@ public class WHOReportParser {
 	private static String fixLineFigures(String line, char sep) {
 		String ret = line.trim() + "\n";
 		String values[] = new String[9];
-		String strings[] = new String[5];
+		String strings[] = new String[6];
 		String elements[] = new String[9];
 		int nbval = 0;
 		int nbstrings = 0;
