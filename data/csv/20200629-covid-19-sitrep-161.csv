@@ -1,0 +1,218 @@
+Date,Country,ISO-3166 code,Confirmed cases,New cases,Deaths,New deaths,Transmission type,Days since last case
+2020-06-28,South Africa,ZAF,138134,6334,2456,43,Community transmission,0
+2020-06-28,Nigeria,NGA,24567,490,565,7,Community transmission,0
+2020-06-28,Ghana,GHA,17351,920,112,9,Community transmission,0
+2020-06-28,Algeria,DZA,13273,305,897,5,Community transmission,0
+2020-06-28,Cameroon,CMR,12592,0,313,0,Community transmission,3
+2020-06-28,Cote d'Ivoire,CIV,8944,0,66,0,Community transmission,1
+2020-06-28,Democratic Republic of the Congo,COD,6826,137,157,5,Community transmission,0
+2020-06-28,Senegal,SEN,6586,127,105,3,Community transmission,0
+2020-06-28,Kenya,KEN,6070,259,144,3,Community transmission,0
+2020-06-28,Ethiopia,ETH,5689,119,98,4,Community transmission,0
+2020-06-28,Guinea,GIN,5342,51,31,1,Community transmission,0
+2020-06-28,Gabon,GAB,5209,0,40,0,Community transmission,2
+2020-06-28,Mauritania,MRT,3907,0,120,0,Clusters of cases,1
+2020-06-28,Central African Republic,CAF,3429,89,45,5,Community transmission,0
+2020-06-28,Mali,MLI,2147,87,114,1,Community transmission,0
+2020-06-28,Madagascar,MDG,2078,73,18,2,Clusters of cases,0
+2020-06-28,South Sudan,SSD,1966,8,36,0,Clusters of cases,0
+2020-06-28,Guinea-Bissau,GNB,1614,0,21,0,Community transmission,1
+2020-06-28,Zambia,ZMB,1531,0,21,0,Community transmission,2
+2020-06-28,Sierra Leone,SLE,1427,17,60,1,Community transmission,0
+2020-06-28,Congo,COG,1245,0,40,0,Community transmission,1
+2020-06-28,Cabo Verde,CPV,1155,64,12,0,Clusters of cases,0
+2020-06-28,Malawi,MWI,1152,114,13,0,Clusters of cases,0
+2020-06-28,Benin,BEN,1149,25,16,2,Community transmission,0
+2020-06-28,Niger,NER,1074,15,67,0,Community transmission,0
+2020-06-28,Equatorial Guinea,GNQ,1043,0,12,0,Community transmission,36
+2020-06-28,Burkina Faso,BFA,959,5,53,0,Community transmission,0
+2020-06-28,Rwanda,RWA,900,22,2,0,Sporadic cases,0
+2020-06-28,Chad,TCD,866,1,74,0,Community transmission,0
+2020-06-28,Mozambique,MOZ,859,20,5,0,Clusters of cases,0
+2020-06-28,Uganda,UGA,833,0,0,0,Sporadic cases,2
+2020-06-28,Eswatini,SWZ,781,36,11,3,Clusters of cases,0
+2020-06-28,Liberia,LBR,768,84,34,0,Community transmission,0
+2020-06-28,Togo,TGO,615,0,14,0,Community transmission,1
+2020-06-28,Zimbabwe,ZWE,567,0,6,-1,Sporadic cases,1
+2020-06-28,United Republic of Tanzania,TZA,509,0,21,0,Community transmission,52
+2020-06-28,Sao Tome and Principe,STP,393,0,11,0,Clusters of cases,1
+2020-06-28,Mauritius,MUS,341,0,10,0,Clusters of cases,4
+2020-06-28,Comoros,COM,293,21,7,0,Community transmission,0
+2020-06-28,Angola,AGO,267,8,11,1,Clusters of cases,0
+2020-06-28,Eritrea,ERI,191,0,0,0,Sporadic cases,1
+2020-06-28,Botswana,BWA,175,50,1,0,Clusters of cases,0
+2020-06-28,Burundi,BDI,170,26,1,0,Clusters of cases,0
+2020-06-28,Namibia,NAM,150,14,0,0,Sporadic cases,0
+2020-06-28,Seychelles,SYC,77,7,0,0,Clusters of cases,0
+2020-06-28,Gambia,GMB,45,0,2,0,Sporadic cases,1
+2020-06-28,Lesotho,LSO,27,3,0,0,Sporadic cases,0
+2020-06-28,Mayotte,MYT,2540,0,35,0,Clusters of cases,1
+2020-06-28,Reunion,REU,521,1,2,0,Clusters of cases,0
+2020-06-28,United States of America,USA,2496628,44580,125318,507,Community transmission,0
+2020-06-28,Brazil,BRA,1313667,38693,57070,1109,Community transmission,0
+2020-06-28,Peru,PER,275989,3625,9135,196,Community transmission,0
+2020-06-28,Chile,CHL,271982,4216,5509,162,Community transmission,0
+2020-06-28,Mexico,MEX,212802,4410,26381,602,Community transmission,0
+2020-06-28,Canada,CAN,103032,238,8516,8,Community transmission,0
+2020-06-28,Colombia,COL,88591,4149,2939,128,Community transmission,0
+2020-06-28,Argentina,ARG,57744,2401,1217,25,Community transmission,0
+2020-06-28,Ecuador,ECU,55255,681,4429,5,Community transmission,0
+2020-06-28,Dominican Republic,DOM,31373,754,726,8,Community transmission,0
+2020-06-28,Bolivia (Plurinational State of),BOL,30676,1253,970,36,Community transmission,0
+2020-06-28,Panama,PAN,30658,753,592,17,Community transmission,0
+2020-06-28,Honduras,HND,17007,1,013479,8,Community transmission,0
+2020-06-28,Guatemala,GTM,16397,569,706,34,Community transmission,0
+2020-06-28,El Salvador,SLV,5934,207,152,9,Community transmission,0
+2020-06-28,Haiti,HTI,5722,0,98,0,Community transmission,1
+2020-06-28,Venezuela (Bolivarian Republic of),VEN,5130,351,42,1,Community transmission,0
+2020-06-28,Costa Rica,CRI,2979,143,13,1,Clusters of cases,0
+2020-06-28,Cuba,CUB,2332,2,86,0,Clusters of cases,0
+2020-06-28,Nicaragua,NIC,2014,0,74,0,Community transmission,11
+2020-06-28,Paraguay,PRY,1942,231,15,2,Community transmission,0
+2020-06-28,Uruguay,URY,924,5,26,0,Clusters of cases,0
+2020-06-28,Jamaica,JAM,686,0,10,0,Clusters of cases,1
+2020-06-28,Suriname,SUR,467,76,11,1,Clusters of cases,0
+2020-06-28,Guyana,GUY,230,0,12,0,Clusters of cases,1
+2020-06-28,Trinidad and Tobago,TTO,126,2,8,0,Sporadic cases,0
+2020-06-28,Bahamas,BHS,104,0,11,0,Clusters of cases,13
+2020-06-28,Barbados,BRB,97,0,7,0,Clusters of cases,13
+2020-06-28,Antigua and Barbuda,ATG,65,39,3,0,Clusters of cases,0
+2020-06-28,Saint Vincent and the Grenadines,VCT,29,0,0,0,Sporadic cases,11
+2020-06-28,Belize,BLZ,24,0,2,0,Sporadic cases,1
+2020-06-28,Grenada,GRD,23,0,0,0,Clusters of cases,33
+2020-06-28,Saint Lucia,LCA,19,0,0,0,Sporadic cases,23
+2020-06-28,Dominica,DMA,18,0,0,0,Clusters of cases,16
+2020-06-28,Saint Kitts and Nevis,KNA,15,0,0,0,No cases,69
+2020-06-28,Puerto Rico,PRI,7189,123,153,1,Community transmission,0
+2020-06-28,French Guiana,GUF,3461,0,12,0,Community transmission,1
+2020-06-28,Martinique,MTQ,242,0,14,0,Clusters of cases,1
+2020-06-28,Cayman Islands,CYM,196,0,1,0,Clusters of cases,3
+2020-06-28,Guadeloupe,GLP,182,0,14,0,Clusters of cases,2
+2020-06-28,Bermuda,BMU,146,0,9,0,Sporadic cases,8
+2020-06-28,Aruba,ABW,101,0,3,0,No cases,54
+2020-06-28,United States Virgin Islands,VIR,81,0,6,0,Clusters of cases,2
+2020-06-28,Sint Maarten,SXM,77,0,15,0,No cases,23
+2020-06-28,Saint Martin,MAF,42,0,3,0,Sporadic cases,12
+2020-06-28,Curaçao,CUW,23,0,1,0,No cases,2
+2020-06-28,Turks and Caicos Islands,TCA,16,0,1,0,No cases,2
+2020-06-28,Falkland Islands (Malvinas),FLK,13,0,0,0,No cases,64
+2020-06-28,Montserrat,MSR,11,0,1,0,No cases,76
+2020-06-28,British Virgin Islands,VGB,8,0,1,0,No cases,44
+2020-06-28,Bonaire Sint Eustatius and Saba,BES,7,0,0,0,No cases,34
+2020-06-28,Saint Barthelemy,BLM,6,0,0,0,No cases,90
+2020-06-28,Anguilla,AIA,3,0,0,0,No cases,86
+2020-06-28,Saint Pierre and Miquelon,SPM,1,0,0,0,No cases,82
+2020-06-28,Iran (Islamic Republic of),IRN,222669,2489,10508,144,Community transmission,0
+2020-06-28,Pakistan,PAK,206512,3557,4167,49,Clusters of cases,0
+2020-06-28,Saudi Arabia,SAU,182493,3989,1551,40,Clusters of cases,0
+2020-06-28,Qatar,QAT,94413,750,110,0,Community transmission,0
+2020-06-28,Egypt,EGY,65188,1265,2789,81,Clusters of cases,0
+2020-06-28,United Arab Emirates,ARE,47797,437,313,2,Community transmission,0
+2020-06-28,Iraq,IRQ,45402,2140,1756,96,Community transmission,0
+2020-06-28,Kuwait,KWT,44942,551,348,4,Clusters of cases,0
+2020-06-28,Oman,OMN,38150,1197,163,4,Community transmission,0
+2020-06-28,Afghanistan,AFG,31238,271,733,4,Clusters of cases,0
+2020-06-28,Bahrain,BHR,25705,438,83,5,Clusters of cases,0
+2020-06-28,Morocco,MAR,12052,175,221,1,Clusters of cases,0
+2020-06-28,Sudan,SDN,9258,0,572,0,Community transmission,2
+2020-06-28,Djibouti,DJI,4643,0,52,0,Clusters of cases,2
+2020-06-28,Somalia,SOM,2894,16,90,0,Sporadic cases,0
+2020-06-28,Lebanon,LBN,1740,21,33,0,Clusters of cases,0
+2020-06-28,Tunisia,TUN,1169,1,50,0,Sporadic cases,0
+2020-06-28,Yemen,YEM,1122,15,303,6,Community transmission,0
+2020-06-28,Jordan,JOR,1121,10,9,0,Clusters of cases,0
+2020-06-28,Libya,LBY,762,35,21,3,Clusters of cases,0
+2020-06-28,Syrian Arab Republic,SYR,256,0,9,0,Community transmission,1
+2020-06-28,Occupied Palestinian Territory,PSE,2248,195,7,0,Clusters of cases,0
+2020-06-28,Russian Federation,RUS,641156,6719,9166,93,Clusters of cases,0
+2020-06-28,The United Kingdom,GBR,311155,901,43550,36,Community transmission,0
+2020-06-28,Spain,ESP,248770,301,28343,2,Community transmission,0
+2020-06-28,Italy,ITA,240310,174,34738,22,Community transmission,0
+2020-06-28,Turkey,TUR,197239,1356,5097,15,Community transmission,0
+2020-06-28,Germany,DEU,193761,262,8961,4,Clusters of cases,0
+2020-06-28,France,FRA,156156,0,29700,0,Community transmission,2
+2020-06-28,Sweden,SWE,65137,0,5280,0,Community transmission,2
+2020-06-28,Belarus,BLR,61475,380,383,6,Community transmission,0
+2020-06-28,Belgium,BEL,61361,152,9732,0,Community transmission,0
+2020-06-28,Netherlands,NLD,50147,73,6105,0,Community transmission,0
+2020-06-28,Ukraine,UKR,43628,646,1147,18,Community transmission,0
+2020-06-28,Portugal,PRT,41646,457,1564,3,Community transmission,0
+2020-06-28,Poland,POL,33907,193,1438,3,Community transmission,0
+2020-06-28,Switzerland,CHE,31534,62,1681,0,Community transmission,0
+2020-06-28,Romania,ROU,26313,291,1612,23,Community transmission,0
+2020-06-28,Ireland,IRL,25439,2,1735,1,Clusters of cases,0
+2020-06-28,Armenia,ARM,25127,482,433,7,Community transmission,0
+2020-06-28,Israel,ISR,23457,938,318,6,Pending,0
+2020-06-28,Kazakhstan,KAZ,21327,547,183,10,Clusters of cases,0
+2020-06-28,Austria,AUT,17625,63,702,2,Community transmission,0
+2020-06-28,Azerbaijan,AZE,16424,534,198,5,Clusters of cases,0
+2020-06-28,Republic of Moldova,MDA,16250,170,533,7,Community transmission,0
+2020-06-28,Serbia,SRB,14046,254,270,3,Pending,0
+2020-06-28,Denmark,DNK,12675,0,604,0,Community transmission,2
+2020-06-28,Czechia,CZE,11603,305,348,1,Clusters of cases,0
+2020-06-28,Norway,NOR,8815,0,249,0,Clusters of cases,2
+2020-06-28,Uzbekistan,UZB,8031,306,22,2,Clusters of cases,0
+2020-06-28,Finland,FIN,7191,0,328,0,Pending,2
+2020-06-28,North Macedonia,MKD,6092,186,286,9,Clusters of cases,0
+2020-06-28,Tajikistan,TJK,5849,50,52,0,Pending,0
+2020-06-28,Kyrgyzstan,KGZ,5017,504,50,4,Clusters of cases,0
+2020-06-28,Bulgaria,BGR,4691,66,219,3,Clusters of cases,0
+2020-06-28,Luxembourg,LUX,4242,25,110,0,Clusters of cases,0
+2020-06-28,Hungary,HUN,4142,4,581,3,Community transmission,0
+2020-06-28,Bosnia and Herzegovina,BIH,4107,0,179,0,Community transmission,1
+2020-06-28,Greece,GRC,3376,10,191,0,Clusters of cases,0
+2020-06-28,Croatia,HRV,2691,67,107,0,Sporadic cases,0
+2020-06-28,Albania,ALB,2466,64,58,3,Clusters of cases,0
+2020-06-28,Estonia,EST,1987,1,69,0,Clusters of cases,0
+2020-06-28,Iceland,ISL,1838,2,10,0,Community transmission,0
+2020-06-28,Lithuania,LTU,1816,3,78,0,Community transmission,0
+2020-06-28,Slovakia,SVK,1664,7,28,0,Clusters of cases,0
+2020-06-28,Slovenia,SVN,1581,9,111,0,Clusters of cases,0
+2020-06-28,Latvia,LVA,1116,1,30,0,Sporadic cases,0
+2020-06-28,Cyprus,CYP,994,0,19,0,Clusters of cases,1
+2020-06-28,Georgia,GEO,926,2,15,0,Sporadic cases,0
+2020-06-28,Andorra,AND,855,0,52,0,Community transmission,10
+2020-06-28,San Marino,SMR,713,0,42,0,Community transmission,9
+2020-06-28,Malta,MLT,670,0,9,0,Sporadic cases,2
+2020-06-28,Montenegro,MNE,481,37,11,2,Clusters of cases,0
+2020-06-28,Monaco,MCO,99,0,1,0,Sporadic cases,22
+2020-06-28,Liechtenstein,LIE,83,0,1,0,Pending,64
+2020-06-28,Holy See,VAT,12,0,0,0,Sporadic cases,53
+2020-06-28,Kosovo,XKX,2634,87,38,1,Community transmission,0
+2020-06-28,Isle of Man,IMN,336,0,24,0,Pending,38
+2020-06-28,Jersey,JEY,319,0,31,0,Community transmission,3
+2020-06-28,Guernsey,GGY,252,0,13,0,Community transmission,57
+2020-06-28,Faroe Islands,FRO,187,0,0,0,Pending,66
+2020-06-28,Gibraltar,GIB,177,1,0,0,Clusters of cases,0
+2020-06-28,Greenland,GRL,13,0,0,0,Pending,31
+2020-06-28,India,IND,548318,19459,16475,380,Clusters of cases,0
+2020-06-28,Bangladesh,BGD,137787,3809,1738,43,Community transmission,0
+2020-06-28,Indonesia,IDN,54010,1198,2754,34,Community transmission,0
+2020-06-28,Nepal,NPL,12772,463,28,0,Sporadic cases,0
+2020-06-28,Thailand,THA,3169,7,58,0,Clusters of cases,0
+2020-06-28,Maldives,MDV,2324,19,8,0,Clusters of cases,0
+2020-06-28,Sri Lanka,LKA,2037,4,11,0,Clusters of cases,0
+2020-06-28,Myanmar,MMR,299,3,6,0,Clusters of cases,0
+2020-06-28,Bhutan,BTN,76,0,0,0,Sporadic cases,1
+2020-06-28,Timor-Leste,TLS,24,0,0,0,No cases,66
+2020-06-28,China,CHN,85204,14,4648,0,Clusters of cases,0
+2020-06-28,Singapore,SGP,43459,213,26,0,Clusters of cases,0
+2020-06-28,Philippines,PHL,35455,652,1244,8,Community transmission,0
+2020-06-28,Japan,JPN,18476,86,972,1,Clusters of cases,0
+2020-06-28,Republic of Korea,KOR,12757,42,282,0,Clusters of cases,0
+2020-06-28,Malaysia,MYS,8634,18,121,0,Clusters of cases,0
+2020-06-28,Australia,AUS,7686,45,104,0,Clusters of cases,0
+2020-06-28,New Zealand,NZL,1178,2,22,0,Clusters of cases,0
+2020-06-28,Viet Nam,VNM,355,0,0,0,Clusters of cases,1
+2020-06-28,Mongolia,MNG,219,0,0,0,Sporadic cases,2
+2020-06-28,Brunei Darussalam,BRN,141,0,3,0,No cases,52
+2020-06-28,Cambodia,KHM,141,2,0,0,Sporadic cases,0
+2020-06-28,Lao People's Democratic Republic,LAO,19,0,0,0,Sporadic cases,77
+2020-06-28,Fiji,FJI,18,0,0,0,Sporadic cases,69
+2020-06-28,Papua New Guinea,PNG,11,0,0,0,Sporadic cases,3
+2020-06-28,Guam,GUM,240,0,5,0,Clusters of cases,2
+2020-06-28,French Polynesia,PYF,62,0,0,0,Sporadic cases,1
+2020-06-28,Northern Mariana Islands (Commonwealth of the),MNP,30,0,2,0,Pending,19
+2020-06-28,New Caledonia,NCL,21,0,0,0,Sporadic cases,19
+2020-06-28,International conveyance (Diamond Princess),---,741,0,13,0,Not applicable,105
+2020-06-28,Grand total,WLD,10021401,178328,499913,4153,n/a,0
