@@ -3,6 +3,10 @@ package com.gibello.whocovid19;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -178,6 +182,7 @@ public class WHOReportParser {
 		while (scanner.hasNext()) {
 			boolean isData = ! scanner.hasNext("\\d+.*");
 			String line = scanner.next().trim();
+			String line0 = null;
 			if(isData) {
 				// 1st replace removes footnote refs like in "Kosovo[1]"
 				// next replace statements put commas btw figures
@@ -192,7 +197,20 @@ public class WHOReportParser {
 				}
 				// Starting May 2, "International conveyance (Diamond Princess)" is now called "Other"...
 				if(line.startsWith("Other")) {
-					line = line.replace("Other", "International conveyance (Diamond Princess)").replace("-", "n/a");
+					// Days of last case for Diamond Princess was March 15 2020
+					long diff = -1;
+					try {
+						SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
+						Duration period = Duration.between(formatter.parse("2020/03/15").toInstant(), Instant.now());
+						diff = period.toDays() -2;
+					} catch(ParseException e) {
+						diff = -1;
+					}
+					line = line.replace("Other", "International conveyance (Diamond Princess)").replace(" - ", "," + diff).trim();
+					int pos = line.indexOf("Grand total");
+					// Note: hack because single line for "Grand total" + "Diamond princess" (!)
+					if(pos > 0) line0 = line.substring(0, pos);
+					//System.out.println("##### Other:" + line0);
 				}
 				if(line.contains("Grand total")) {
 					int pos = line.lastIndexOf("0");
@@ -206,19 +224,23 @@ public class WHOReportParser {
 				if(isData && line.length() > 20) {
 					// Filter out too weird lines (sometimes pdf syntax not clean)
 					if(Character.isAlphabetic(line.charAt(0)) && line.indexOf(sep) > 0) {
-						// Fix country name if required
-						int pos = line.indexOf(sep);
-						String country = line.substring(0, pos);
-						String fix = fixCountryName(country);
-						line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
-						//data.append(line.trim() + "\n");
-						data.append(fixLineFigures(line, sep));
+						if(line0 != null) data.append(formatLine(line0, date, sep));
+						data.append(formatLine(line, date, sep));
 					}
 				}
 			}
 		}
 		scanner.close();
 		return data.toString();
+	}
+	
+	private static String formatLine(String line, String date, char sep) {
+		// Fix country name if required
+		int pos = line.indexOf(sep);
+		String country = line.substring(0, pos);
+		String fix = fixCountryName(country);
+		line = date + sep + fix + sep + Iso3166.getCountryCode(fix) + line.substring(pos);
+		return fixLineFigures(line, sep);
 	}
 
 	/**
@@ -228,11 +250,12 @@ public class WHOReportParser {
 	 */
 	private static String fixLineFigures(String line, char sep) {
 		String ret = line.trim() + "\n";
-		String values[] = new String[9];
+		String values[] = new String[10];
 		String strings[] = new String[6];
 		String elements[] = new String[9];
 		int nbval = 0;
 		int nbstrings = 0;
+
 		StringTokenizer st = new StringTokenizer(line, Character.toString(sep));
 		while(st.hasMoreTokens()) {
 			String token = st.nextToken();
@@ -247,7 +270,7 @@ public class WHOReportParser {
 		elements[1] = strings[1];
 		elements[2] = strings[2];
 		elements[7] = strings[3];
-		
+
 		// There should be 5 numbers in line...
 		if(nbval == 5) {
 			return ret;  // NO CHECK WAS REQUIRED !
@@ -268,12 +291,17 @@ public class WHOReportParser {
 			}
 			elements[8] = values[6];
 		} else if(nbval >= 8) { // Space in "confirmed cases" + "New cases" + "Deaths"
-			elements[3] = values[0] + values[1] + (nbval > 8 ? values[2] : "");
-			int shift = (nbval > 8 ? 1 : 0);
+			boolean gt = line.contains("Grand total"); // Specific treatment for Grand total...
+			elements[3] = values[0] + values[1] + (!gt && nbval > 8 ? values[2] : "");
+			int shift = (!gt && nbval > 8 ? 1 : 0);
 			elements[4] = values[2+shift] + values[3+shift];
 			elements[5] = values[4+shift] + values[5+shift];
 			elements[6] = values[6+shift];
 			elements[8] = values[7+shift];
+			if(elements[8].length() >= 3) {
+				elements[6] = values[6+shift] + values[7+shift];
+				elements[8] = values[8+shift];
+			}
 		}
 		StringBuilder result = new StringBuilder();
 		for (int i=0; i<9; i++) {
@@ -283,9 +311,10 @@ public class WHOReportParser {
 		boolean toCheck = (nbstrings > 4 || nbval > 8); // Very suspicious syntax...
 		if(! toCheck) {
 			try {
-				toCheck = (Integer.parseInt(elements[3]) > 99999 // More than 100.000 confirmed
+				int nConfirmed = Integer.parseInt(elements[3]);
+				toCheck = (nConfirmed > 99999 // More than 100.000 confirmed
 					|| Integer.parseInt(elements[4]) > 9999); // Many new cases
-				if(! toCheck) toCheck = (Integer.parseInt(elements[8]) > 0); // At least & day since last
+				if(! toCheck && nConfirmed > 9999) toCheck = (Integer.parseInt(elements[8]) > 0); // At least 1 day since last (and significant number of cases)
 			} catch(Exception e) { toCheck = true; }
 		}
 		if(toCheck) System.err.println("Warning: check required for " + result.toString().substring(11));
