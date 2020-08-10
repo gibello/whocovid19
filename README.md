@@ -3,7 +3,7 @@
 Parse WHO covid19 PDF reports, and provide data by country in CSV format.
 This repository provides the extracted CSV data (starting from march 1, 2020) + the parser source code.
 
-**Holiday notice: daily update not guaranteed the first week of august (back to normal as of Aug. 9th, 2020)**
+**Holiday notice: daily update not guaranteed by the end of august (should get back to normal as of Aug. 24th, 2020)**
 
 **Complete data (since march 1, 2020) are here (immutable link): [global_who_data.csv](global_who_data.csv?raw=true)**.
 
