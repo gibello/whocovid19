@@ -1,15 +1,30 @@
 # WHO covid19 CSV reports data + PDF parser
 
-Parse WHO covid19 PDF reports, and provide data by country in CSV format.
-This repository provides the extracted CSV data (starting from march 1, 2020) + the parser source code.
+Parse WHO covid19 daily PDF reports, and provide data by country in CSV format.
+This repository provides the extracted CSV data (march 1 to August 15, 2020) + the parser source code.
 
-**Holiday notice: daily update not guaranteed by the end of august (should get back to normal as of Aug. 24th, 2020)**
+## FINAL NOTICE: WHO published their last daily PDF report on August 16, 2020: last update for this dataset (no more data to parse now!).
 
-**Complete data (since march 1, 2020) are here (immutable link): [global_who_data.csv](global_who_data.csv?raw=true)**.
+WHO now publishes a full dataset (CSV format), with daily data by country since Feb. 24, 2020, here:\
+https://covid19.who.int/WHO-COVID-19-global-data.csv (main page is https://covid19.who.int) \
+Hope this time it will never get discontinued ;)
+
+Note there may be some slight differences between WHO dataset and mine:
+- The file format is somewhat different: one more column (WHO_region) for WHO dataset, and WHO uses 2-digit ISO country codes (instead of 3-digit).
+- A one day shift is likely (WHO publishes data at 10 AM... which I consider data as of the day before!).
+- The "country" WHO calls "Other" is called "International conveyance (Diamond Princess)" in my data (it is a cruise ship).
+- Some late fixes may have been reintroduced by WHO in their data (they published errata for PDF reports, but reports themselves were not fixed).
+- My data may contain a few parsing errors: I checked them every day, but may have missed something (particularly for countries with little cases).
+
+## Parsed data
+
+Disclaimer: Data published here are provided as is, with no warranty.
+
+**Complete data (march 1 to august 15, 2020) are here (immutable link): [global_who_data.csv](global_who_data.csv?raw=true)**.
 
 **Daily parsed data files (CSV) are here: [data/csv](data/csv)** . Note that files are named against their date of publication + report #, and the date corresponds to data collected the day before (eg. 20200322-sitrep-62-covid-19.csv contains data as of march 21, and is report #62). Same naming convention as WHO reports.
 
-WHO reports available here:
+WHO reports are (or were ?) available here:
 https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
 
 Parser should not work for reports published before March 2, 2020 (data as of march 1st).
